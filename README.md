@@ -1,4 +1,4 @@
-[![](https://visitcount.itsvg.in/api?id=therealomm&icon=0&color=0)](https://visitcount.itsvg.in)
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=therealomm&label=Profile%20views&color=0e75b6&style=flat" alt="therealomm" /> </p>
 
 # 💫 About Me:
 Hi! I’m **Om Pradeep Jagtap**, a passionate **Cybersecurity & AI enthusiast** currently pursuing a **B.Tech in Computer Science Engineering (Cybersecurity & Forensics)** at MIT ADT University, Pune. I focus on building **secure, intelligent, and scalable systems** using AI, ML, and modern security frameworks.
