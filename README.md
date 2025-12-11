@@ -1,54 +1,72 @@
 # 💫 About Me:
-Hi! I’m **Om Pradeep Jagtap**, a passionate **Cybersecurity and AI enthusiast** currently pursuing a **B.Tech in Computer Science Engineering (Cybersecurity & Forensics)** at MIT ADT University, Pune. I love building **secure, intelligent, and scalable systems** using Machine Learning, NLP, and modern security frameworks.
+Hi! I’m **Om Pradeep Jagtap**, a passionate **Cybersecurity & AI enthusiast** currently pursuing a **B.Tech in Computer Science Engineering (Cybersecurity & Forensics)** at MIT ADT University, Pune. I focus on building **secure, intelligent, and scalable systems** using AI, ML, and modern security frameworks.
 
-Over the years, I’ve explored the intersection of **AI and Cybersecurity**, working on projects involving phishing detection, NLP-based sentiment analysis, steganography, and ML-driven threat detection. I enjoy solving challenging problems, experimenting with new technologies, and continuously learning through hands-on development.
+I work at the intersection of **AI + Cybersecurity**, creating systems for phishing detection, threat analysis, NLP-based sentiment classification, and data security. I enjoy taking on challenging problems, experimenting with cutting-edge tools, and constantly leveling up through real-world projects.
 
-### 🔐 What I’m Interested In
-- Artificial Intelligence & Machine Learning  
-- Cybersecurity & Zero Trust Architecture  
-- Network Security & Vulnerability Analysis  
-- Secure AI Systems  
-- Penetration Testing & Ethical Hacking  
+---
+
+### 🔐 Interests
+- 🧠 Artificial Intelligence & Machine Learning  
+- 🔒 Cybersecurity & Zero Trust Architecture  
+- 🌐 Network Security & Vulnerability Analysis  
+- 🤖 Secure AI Systems  
+- 🛡️ Penetration Testing & Ethical Hacking  
+
+---
 
 ### 🧠 Technical Skills
-**Languages:** Python, Java, JavaScript  
-**AI/ML:** Scikit-Learn, NLP, Deep Learning  
-**Cybersecurity:** Zero Trust, Network Security, Threat Analysis  
-**Tools & Tech:** Flask, React/Next.js, MongoDB, Tkinter  
-**Other:** Problem Solving, Analytical Thinking  
+**Languages:** Python • Java • JavaScript  
+**AI/ML:** Scikit-Learn • NLP • Deep Learning  
+**Cybersecurity:** Zero Trust • Network Security • Threat Analysis  
+**Tools:** Flask • React/Next.js • MongoDB • Tkinter  
+**Soft Skills:** Problem Solving • Analytical Thinking  
 
-### 🛠️ Projects I’ve Worked On
-📌 **PhishGuard — AI-based Phishing Detection System**  
-Detects phishing attempts in emails and SMS using ML + LLM techniques.  
+---
 
-📌 **Phishing Link Detection using ResMLP**  
-Analyzes URLs using ML models like Random Forest & ResMLP.  
+### 🛠️ Projects
+#### 📌 PhishGuard — *AI-Based Phishing Detection System*  
+Detects phishing attempts in emails & SMS using ML + LLM models.  
+**Tech:** Python, Flask, React/Next.js, MongoDB  
 
-📌 **Sentiment Analysis Using NLP**  
-Published research work using deep learning for text sentiment classification.  
+#### 📌 Phishing Link Detection using ResMLP  
+ML-based URL threat detection using Random Forest & ResMLP architectures.
 
-📌 **Image-Based Steganography**  
-Implements secure data hiding using steganography techniques.  
+#### 📌 Sentiment Analysis Using NLP  
+Published research using deep learning for text sentiment classification.
 
-📌 **Egg Catcher Game**  
-A fun GUI-based Python game built using Tkinter.  
+#### 📌 Image-Based Steganography  
+Secure data hiding using advanced steganographic techniques.
+
+#### 📌 Egg Catcher Game  
+A fun GUI-based Python game built using Tkinter.
+
+---
 
 ### 🎓 Certifications
-- Zscaler Zero Trust Cyber Associate  
-- Fortinet Network Security Associate  
-- Palo Alto Cybersecurity Internship  
-- EC-Council Ethical Hacking Essentials  
-- Google Digital Marketing  
-- Coursera – Foundations of Cybersecurity  
+- 🛡️ Zscaler Zero Trust Cyber Associate  
+- 🔐 Fortinet Network Security Associate  
+- 🔥 Palo Alto Cybersecurity Internship  
+- 🧩 EC-Council Ethical Hacking Essentials  
+- 🌐 Google Digital Marketing  
+- 🎓 Coursera: Foundations of Cybersecurity  
+
+---
 
 ### 🌍 More About Me
-When I’m not coding or learning about cybersecurity, you’ll find me **travelling, gaming, or exploring outdoor adventures**. I enjoy collaborating on meaningful projects and constantly improving my skills.
+Beyond tech, you'll find me:  
+- ✈️ Travelling  
+- 🎮 Gaming  
+- 🏔️ Going on outdoor adventures  
+- 🤝 Collaborating on exciting tech projects  
+
+---
 
 ### 📫 Let’s Connect
-GitHub: https://github.com/therealomm  
-LinkedIn: https://linkedin.com/in/therealomm  
-Portfolio: https://therealomm.github.io/portfolio/  
-Email: **omjagtap21@gmail.com**
+🔗 GitHub: **https://github.com/therealomm**  
+💼 LinkedIn: **https://linkedin.com/in/therealomm**  
+🌐 Portfolio: **https://therealomm.github.io/portfolio/**  
+📧 Email: **omjagtap21@gmail.com**
+
 
 
 
