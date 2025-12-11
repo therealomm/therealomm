@@ -14,25 +14,6 @@ I work at the intersection of **AI + Cybersecurity**, creating systems for phish
 
 ---
 
-### 🛠️ Projects
-#### 📌 PhishGuard — *AI-Based Phishing Detection System*  
-Detects phishing attempts in emails & SMS using ML + LLM models.  
-**Tech:** Python, Flask, React/Next.js, MongoDB  
-
-#### 📌 Phishing Link Detection using ResMLP  
-ML-based URL threat detection using Random Forest & ResMLP architectures.
-
-#### 📌 Sentiment Analysis Using NLP  
-Published research using deep learning for text sentiment classification.
-
-#### 📌 Image-Based Steganography  
-Secure data hiding using advanced steganographic techniques.
-
-#### 📌 Egg Catcher Game  
-A fun GUI-based Python game built using Tkinter.
-
----
-
 ### 🎓 Certifications
 - 🛡️ Zscaler Zero Trust Cyber Associate  
 - 🔐 Fortinet Network Security Associate  
