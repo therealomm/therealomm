@@ -1,16 +1,24 @@
-## Hi there 👋
+# 💫 About Me:
+Hi! I’m Om Pradeep Jagtap, a Cybersecurity and AI enthusiast currently pursuing a B.Tech in Computer Science Engineering (Cybersecurity & Forensics) at MIT ADT University, Pune. I’m passionate about building secure, intelligent, and scalable systems using Machine Learning, AI, and modern security frameworks.<br><br>Over the past few years, I’ve explored the intersection of AI and Cybersecurity, working on real-world projects that involve phishing detection, NLP-based sentiment analysis, steganography, and ML-powered security models. I enjoy solving challenging problems, experimenting with new technologies, and continuously learning through hands-on development.<br><br>🔐 What I’m Interested In<br><br>Artificial Intelligence & Machine Learning<br><br>Cybersecurity & Zero Trust Architecture<br><br>Network Security & Vulnerability Analysis<br><br>Secure AI Systems<br><br>Penetration Testing & Ethical Hacking<br><br>🧠 Technical Skills<br><br>Languages: Python, Java, JavaScript<br><br>AI/ML: Scikit-Learn, NLP, Deep Learning<br><br>Cybersecurity: Zero Trust, Network Security, Threat Analysis<br><br>Tools & Tech: Flask, React/Next.js, MongoDB, Tkinter<br><br>Other: Problem Solving, Analytical Thinking<br><br>🛠️ Projects I’ve Worked On<br>📌 PhishGuard — AI-based Phishing Detection System<br><br>Detects phishing attempts in emails and SMS using ML + LLM techniques.<br>Tech: Python, ML, Flask, React/Next.js, MongoDB<br><br>📌 Phishing Link Detection using ResMLP<br><br>Analyzes URLs using ML models like Random Forest & ResMLP.<br><br>📌 Sentiment Analysis Using NLP<br><br>Published project using deep learning for text sentiment classification.<br><br>📌 Image-Based Steganography<br><br>Implements data hiding using secure steganography techniques.<br><br>📌 Egg Catcher Game<br><br>A fun Python game built using Tkinter.<br><br>🎓 Certifications<br><br>Zscaler Zero Trust Cyber Associate<br><br>Fortinet Network Security Associate<br><br>Palo Alto Cybersecurity Internship<br><br>Google Digital Marketing<br><br>Ethical Hacking Essentials (EC-Council CodeRed)<br><br>Foundations of Cybersecurity (Coursera)<br><br>🌍 More About Me<br><br>When I'm not coding or learning about cybersecurity, you'll probably find me travelling, gaming, or exploring outdoor adventures. I enjoy learning new skills, collaborating with others, and contributing to impactful tech projects.<br><br>📫 Let’s Connect<br><br>GitHub: https://github.com/therealomm<br><br>LinkedIn: https://linkedin.com/in/therealomm<br><br>Portfolio: https://therealomm.github.io/portfolio/<br><br>Email: omjagtap21@gmail.com
 
-<!--
-**therealomm/therealomm** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-Here are some ideas to get you started:
+## 🌐 Socials:
+[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/therealomm) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/therealomm) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:omjagtap21@gmail.com) 
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+# 💻 Tech Stack:
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Windows Terminal](https://img.shields.io/badge/Windows%20Terminal-%234D4D4D.svg?style=for-the-badge&logo=windows-terminal&logoColor=white) ![PowerShell](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) ![Render](https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7) ![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=microsoftazure&logoColor=white) ![Apache Tomcat](https://img.shields.io/badge/apache%20tomcat-%23F8DC75.svg?style=for-the-badge&logo=apache-tomcat&logoColor=black) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![Adobe](https://img.shields.io/badge/adobe-%23FF0000.svg?style=for-the-badge&logo=adobe&logoColor=white) ![Adobe Acrobat Reader](https://img.shields.io/badge/Adobe%20Acrobat%20Reader-EC1C24.svg?style=for-the-badge&logo=Adobe%20Acrobat%20Reader&logoColor=white) ![Adobe Lightroom Classic](https://img.shields.io/badge/Adobe%20Lightroom%20Classic-31A8FF.svg?style=for-the-badge&logo=Adobe%20Lightroom%20Classic&logoColor=white) ![Gimp](https://img.shields.io/badge/Gimp-657D8B?style=for-the-badge&logo=gimp&logoColor=FFFFFF) ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white) ![Scipy](https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black) ![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Splunk](https://img.shields.io/badge/splunk-%23000000.svg?style=for-the-badge&logo=splunk&logoColor=white)
+# 📊 GitHub Stats:
+![](https://github-readme-stats.vercel.app/api?username=therealomm&theme=neon&hide_border=false&include_all_commits=true&count_private=true)<br/>
+![](https://nirzak-streak-stats.vercel.app/?user=therealomm&theme=neon&hide_border=false)<br/>
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=therealomm&theme=neon&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+
+## 🏆 GitHub Trophies
+![](https://github-profile-trophy.vercel.app/?username=therealomm&theme=dark&no-frame=false&no-bg=true&margin-w=4)
+
+### ✍️ Random Dev Quote
+![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+
+---
+[![](https://visitcount.itsvg.in/api?id=therealomm&icon=0&color=0)](https://visitcount.itsvg.in)
+
+<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
