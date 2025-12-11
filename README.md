@@ -14,15 +14,6 @@ I work at the intersection of **AI + Cybersecurity**, creating systems for phish
 
 ---
 
-### 🧠 Technical Skills
-**Languages:** Python • Java • JavaScript  
-**AI/ML:** Scikit-Learn • NLP • Deep Learning  
-**Cybersecurity:** Zero Trust • Network Security • Threat Analysis  
-**Tools:** Flask • React/Next.js • MongoDB • Tkinter  
-**Soft Skills:** Problem Solving • Analytical Thinking  
-
----
-
 ### 🛠️ Projects
 #### 📌 PhishGuard — *AI-Based Phishing Detection System*  
 Detects phishing attempts in emails & SMS using ML + LLM models.  
@@ -58,16 +49,8 @@ Beyond tech, you'll find me:
 - 🎮 Gaming  
 - 🏔️ Going on outdoor adventures  
 - 🤝 Collaborating on exciting tech projects  
-
+- 🌐 Portfolio: **https://therealomm.github.io/portfolio/**  
 ---
-
-### 📫 Let’s Connect
-🔗 GitHub: **https://github.com/therealomm**  
-💼 LinkedIn: **https://linkedin.com/in/therealomm**  
-🌐 Portfolio: **https://therealomm.github.io/portfolio/**  
-📧 Email: **omjagtap21@gmail.com**
-
-
 
 
 ## 🌐 Socials:
