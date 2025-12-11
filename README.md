@@ -1,5 +1,55 @@
 # 💫 About Me:
-Hi! I’m Om Pradeep Jagtap, a Cybersecurity and AI enthusiast currently pursuing a B.Tech in Computer Science Engineering (Cybersecurity & Forensics) at MIT ADT University, Pune. I’m passionate about building secure, intelligent, and scalable systems using Machine Learning, AI, and modern security frameworks.<br><br>Over the past few years, I’ve explored the intersection of AI and Cybersecurity, working on real-world projects that involve phishing detection, NLP-based sentiment analysis, steganography, and ML-powered security models. I enjoy solving challenging problems, experimenting with new technologies, and continuously learning through hands-on development.<br><br>🔐 What I’m Interested In<br><br>Artificial Intelligence & Machine Learning<br><br>Cybersecurity & Zero Trust Architecture<br><br>Network Security & Vulnerability Analysis<br><br>Secure AI Systems<br><br>Penetration Testing & Ethical Hacking<br><br>🧠 Technical Skills<br><br>Languages: Python, Java, JavaScript<br><br>AI/ML: Scikit-Learn, NLP, Deep Learning<br><br>Cybersecurity: Zero Trust, Network Security, Threat Analysis<br><br>Tools & Tech: Flask, React/Next.js, MongoDB, Tkinter<br><br>Other: Problem Solving, Analytical Thinking<br><br>🛠️ Projects I’ve Worked On<br>📌 PhishGuard — AI-based Phishing Detection System<br><br>Detects phishing attempts in emails and SMS using ML + LLM techniques.<br>Tech: Python, ML, Flask, React/Next.js, MongoDB<br><br>📌 Phishing Link Detection using ResMLP<br><br>Analyzes URLs using ML models like Random Forest & ResMLP.<br><br>📌 Sentiment Analysis Using NLP<br><br>Published project using deep learning for text sentiment classification.<br><br>📌 Image-Based Steganography<br><br>Implements data hiding using secure steganography techniques.<br><br>📌 Egg Catcher Game<br><br>A fun Python game built using Tkinter.<br><br>🎓 Certifications<br><br>Zscaler Zero Trust Cyber Associate<br><br>Fortinet Network Security Associate<br><br>Palo Alto Cybersecurity Internship<br><br>Google Digital Marketing<br><br>Ethical Hacking Essentials (EC-Council CodeRed)<br><br>Foundations of Cybersecurity (Coursera)<br><br>🌍 More About Me<br><br>When I'm not coding or learning about cybersecurity, you'll probably find me travelling, gaming, or exploring outdoor adventures. I enjoy learning new skills, collaborating with others, and contributing to impactful tech projects.<br><br>📫 Let’s Connect<br><br>GitHub: https://github.com/therealomm<br><br>LinkedIn: https://linkedin.com/in/therealomm<br><br>Portfolio: https://therealomm.github.io/portfolio/<br><br>Email: omjagtap21@gmail.com
+Hi! I’m **Om Pradeep Jagtap**, a passionate **Cybersecurity and AI enthusiast** currently pursuing a **B.Tech in Computer Science Engineering (Cybersecurity & Forensics)** at MIT ADT University, Pune. I love building **secure, intelligent, and scalable systems** using Machine Learning, NLP, and modern security frameworks.
+
+Over the years, I’ve explored the intersection of **AI and Cybersecurity**, working on projects involving phishing detection, NLP-based sentiment analysis, steganography, and ML-driven threat detection. I enjoy solving challenging problems, experimenting with new technologies, and continuously learning through hands-on development.
+
+### 🔐 What I’m Interested In
+- Artificial Intelligence & Machine Learning  
+- Cybersecurity & Zero Trust Architecture  
+- Network Security & Vulnerability Analysis  
+- Secure AI Systems  
+- Penetration Testing & Ethical Hacking  
+
+### 🧠 Technical Skills
+**Languages:** Python, Java, JavaScript  
+**AI/ML:** Scikit-Learn, NLP, Deep Learning  
+**Cybersecurity:** Zero Trust, Network Security, Threat Analysis  
+**Tools & Tech:** Flask, React/Next.js, MongoDB, Tkinter  
+**Other:** Problem Solving, Analytical Thinking  
+
+### 🛠️ Projects I’ve Worked On
+📌 **PhishGuard — AI-based Phishing Detection System**  
+Detects phishing attempts in emails and SMS using ML + LLM techniques.  
+
+📌 **Phishing Link Detection using ResMLP**  
+Analyzes URLs using ML models like Random Forest & ResMLP.  
+
+📌 **Sentiment Analysis Using NLP**  
+Published research work using deep learning for text sentiment classification.  
+
+📌 **Image-Based Steganography**  
+Implements secure data hiding using steganography techniques.  
+
+📌 **Egg Catcher Game**  
+A fun GUI-based Python game built using Tkinter.  
+
+### 🎓 Certifications
+- Zscaler Zero Trust Cyber Associate  
+- Fortinet Network Security Associate  
+- Palo Alto Cybersecurity Internship  
+- EC-Council Ethical Hacking Essentials  
+- Google Digital Marketing  
+- Coursera – Foundations of Cybersecurity  
+
+### 🌍 More About Me
+When I’m not coding or learning about cybersecurity, you’ll find me **travelling, gaming, or exploring outdoor adventures**. I enjoy collaborating on meaningful projects and constantly improving my skills.
+
+### 📫 Let’s Connect
+GitHub: https://github.com/therealomm  
+LinkedIn: https://linkedin.com/in/therealomm  
+Portfolio: https://therealomm.github.io/portfolio/  
+Email: **omjagtap21@gmail.com**
+
 
 
 ## 🌐 Socials:
