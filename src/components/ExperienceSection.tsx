@@ -14,6 +14,19 @@ interface Experience {
 
 const experiences: Experience[] = [
   {
+    title: "Project Intern",
+    company: "Road2Tech",
+    period: "Dec 2024 – Ongoing",
+    type: "work",
+    description:
+      "Working as a Project Intern, contributing to the design, development, and implementation of project modules under senior guidance.",
+    details: [
+      "Supported research, documentation, data analysis, and development tasks",
+      "Gaining hands-on experience with real-world tools and workflows",
+      "Part-time position",
+    ],
+  },
+  {
     title: "Cybersecurity Intern",
     company: "Prodigy Infotech",
     period: "Apr 2024 – May 2024",
