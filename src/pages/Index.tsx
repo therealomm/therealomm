@@ -7,6 +7,10 @@ import SkillsSection from "@/components/SkillsSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import ParticleField from "@/components/ParticleField";
+import MatrixRain from "@/components/MatrixRain";
+import CursorGlow from "@/components/CursorGlow";
+import FloatingIcons from "@/components/FloatingIcons";
 
 const Index = () => {
   return (
@@ -30,7 +34,13 @@ const Index = () => {
         <link rel="canonical" href="https://therealomm.github.io/portfolio/" />
       </Helmet>
 
-      <main className="min-h-screen">
+      {/* Visual Effects */}
+      <MatrixRain />
+      <ParticleField />
+      <FloatingIcons />
+      <CursorGlow />
+
+      <main className="min-h-screen relative">
         <Navbar />
         <HeroSection />
         <AboutSection />
