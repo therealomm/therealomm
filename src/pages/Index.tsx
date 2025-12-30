@@ -16,19 +16,19 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Om Jagtap | Cybersecurity Professional</title>
+        <title>Om Jagtap | Cybersecurity & AI</title>
         <meta
           name="description"
-          content="Om Jagtap - Cybersecurity enthusiast specializing in network security, Zero Trust Architecture, and ethical hacking. B.Tech CSE student at MIT ADT University, Pune."
+          content="Om Jagtap - Cybersecurity & AI enthusiast specializing in network security, Zero Trust Architecture, machine learning, and ethical hacking. B.Tech CSE student at MIT ADT University, Pune."
         />
         <meta
           name="keywords"
-          content="Om Jagtap, Cybersecurity, Network Security, Zero Trust, Ethical Hacking, Portfolio, Developer"
+          content="Om Jagtap, Cybersecurity, AI, Machine Learning, Network Security, Zero Trust, Ethical Hacking, Portfolio, Developer"
         />
-        <meta property="og:title" content="Om Jagtap | Cybersecurity Professional" />
+        <meta property="og:title" content="Om Jagtap | Cybersecurity & AI" />
         <meta
           property="og:description"
-          content="Cybersecurity enthusiast specializing in network security, Zero Trust Architecture, and ethical hacking."
+          content="Cybersecurity & AI enthusiast specializing in network security, Zero Trust Architecture, and machine learning."
         />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://therealomm.onrender.com/" />
