@@ -99,7 +99,7 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-display flex flex-col">
-              <span className="text-foreground">Hi,</span>
+              <span className="text-foreground">Hello !</span>
               <span>
                 <span className="text-foreground">I'm </span>
                 <span className="text-gradient">Om Jagtap</span>
