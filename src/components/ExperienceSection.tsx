@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import { Award, Calendar } from "lucide-react";
+import { Award, Calendar, ExternalLink } from "lucide-react";
+import { Button } from "./ui/button";
 
 interface Experience {
   title: string;
@@ -8,6 +9,7 @@ interface Experience {
   type: "work" | "certification";
   description: string;
   details?: string[];
+  verifyLink?: string;
 }
 
 const experiences: Experience[] = [
@@ -51,7 +53,7 @@ const experiences: Experience[] = [
 ];
 
 const certifications = [
-  { name: "Cloud Computing Foundations", issuer: "Zscaler" },
+  { name: "Cloud Computing Foundations", issuer: "Zscaler", verifyLink: "https://aictecert.eduskillsfoundation.org/pages/home/verify.php?cert=e474774b4df6795f24493dcda06c33a3" },
   { name: "Programming Essentials", issuer: "EC-Council CodeRed" },
   { name: "Fundamentals of Digital Marketing", issuer: "Google" },
   { name: "Introduction to Computer Science", issuer: "Coursera" },
@@ -173,12 +175,27 @@ const ExperienceSection = () => {
                     key={index}
                     className="p-4 bg-secondary/50 rounded-lg border border-transparent hover:border-primary/30 transition-all duration-300 group"
                   >
-                    <p className="font-medium text-foreground group-hover:text-primary transition-colors text-sm">
-                      {cert.name}
-                    </p>
-                    <p className="text-muted-foreground text-xs mt-1">
-                      {cert.issuer}
-                    </p>
+                    <div className="flex items-start justify-between gap-2">
+                      <div>
+                        <p className="font-medium text-foreground group-hover:text-primary transition-colors text-sm">
+                          {cert.name}
+                        </p>
+                        <p className="text-muted-foreground text-xs mt-1">
+                          {cert.issuer}
+                        </p>
+                      </div>
+                      {cert.verifyLink && (
+                        <Button
+                          size="sm"
+                          variant="outline"
+                          className="h-7 px-2 text-xs gap-1 shrink-0"
+                          onClick={() => window.open(cert.verifyLink, '_blank')}
+                        >
+                          <ExternalLink className="w-3 h-3" />
+                          Verify
+                        </Button>
+                      )}
+                    </div>
                   </div>
                 ))}
               </div>
