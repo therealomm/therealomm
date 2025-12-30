@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, Github, Linkedin, Mail, FileText, Sparkles } from "lucide-react";
 import { Button } from "./ui/button";
+import profileImage from "@/assets/profile.jpeg";
 
 const roles = [
   "Cybersecurity & AI",
@@ -90,16 +91,29 @@ const HeroSection = () => {
             </div>
           </motion.div>
 
-          {/* Name */}
-          <motion.h1
-            className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 font-display"
+          {/* Name with profile picture */}
+          <motion.div
+            className="flex items-center justify-center gap-4 mb-4"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <span className="text-foreground">Hi, I'm </span>
-            <span className="text-gradient">Om Jagtap</span>
-          </motion.h1>
+            <motion.div 
+              className="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden border-2 border-primary/50 shadow-lg shadow-primary/20"
+              whileHover={{ scale: 1.1 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <img 
+                src={profileImage} 
+                alt="Om Jagtap" 
+                className="w-full h-full object-cover"
+              />
+            </motion.div>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-display">
+              <span className="text-foreground">Hi, I'm </span>
+              <span className="text-gradient">Om Jagtap</span>
+            </h1>
+          </motion.div>
 
           {/* Animated role */}
           <motion.div
