@@ -21,7 +21,7 @@ const experiences: Experience[] = [
     type: "work",
     employmentType: "part-time",
     description:
-      "Working as a Project Intern, contributing to the design, development, and implementation of project modules under senior guidance. Supported research, documentation, data analysis, and development tasks while gaining hands-on experience with real-world tools and workflows.",
+      "Contributing to project development and implementation under senior guidance, supporting research, Reporting, documentation, and data analysis tasks.",
   },
   {
     title: "Cybersecurity Intern",
