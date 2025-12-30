@@ -55,12 +55,12 @@ const experiences: Experience[] = [
   },
 ];
 
-const certifications: { name: string; issuer: string; verifyLink?: string }[] = [
-  { name: "Zscaler Zero Trust Cyber Associate (ZTCA)", issuer: "Zscaler" },
-  { name: "Ethical Hacking Essentials", issuer: "EC-Council CodeRed" },
-  { name: "Fundamentals of Digital Marketing", issuer: "Google" },
-  { name: "The Foundations of Cyber Security", issuer: "Coursera" },
-  { name: "Microsoft Gen AI Foundations Certificate Program", issuer: "Upgrad" },
+const certifications: { name: string; issuer: string; verifyLink?: string; status?: string }[] = [
+  { name: "Zscaler Zero Trust Cyber Associate (ZTCA)", issuer: "Zscaler", verifyLink: "https://verify.skilljar.com/c/nxpb6s6itnrz" },
+  { name: "Ethical Hacking Essentials", issuer: "EC-Council CodeRed", verifyLink: "https://learn.eccouncil.org/certificate/4f955121-53c4-4bc0-876a-9549a3031642" },
+  { name: "Fundamentals of Digital Marketing", issuer: "Google", verifyLink: "https://drive.google.com/file/d/1TAnAHvCD_DPraBSHtXmnrWlqCTle5VHC/view?usp=drivesdk" },
+  { name: "The Foundations of Cyber Security", issuer: "Coursera", verifyLink: "https://www.coursera.org/account/accomplishments/verify/34D26BYJD9L2" },
+  { name: "Microsoft Gen AI Foundations Certificate Program", issuer: "Upgrad", status: "Ongoing" },
 ];
 
 const ExperienceSection = () => {
@@ -191,9 +191,16 @@ const ExperienceSection = () => {
                   >
                     <div className="flex items-start justify-between gap-2">
                       <div>
-                        <p className="font-medium text-foreground group-hover:text-primary transition-colors text-sm">
-                          {cert.name}
-                        </p>
+                        <div className="flex items-center gap-2">
+                          <p className="font-medium text-foreground group-hover:text-primary transition-colors text-sm">
+                            {cert.name}
+                          </p>
+                          {cert.status && (
+                            <span className="text-[10px] px-2 py-0.5 bg-accent/20 text-accent rounded-full font-medium">
+                              {cert.status}
+                            </span>
+                          )}
+                        </div>
                         <p className="text-muted-foreground text-xs mt-1">
                           {cert.issuer}
                         </p>
