@@ -9,8 +9,8 @@ const AboutSection = () => {
   const stats = [
     { icon: GraduationCap, label: "Education", value: "B.Tech CSE", color: "from-violet-500 to-purple-500" },
     { icon: MapPin, label: "Location", value: "Pune, India", color: "from-pink-500 to-rose-500" },
-    { icon: Code, label: "Focus", value: "Full Stack", color: "from-blue-500 to-cyan-500" },
-    { icon: Target, label: "Goal", value: "Innovation", color: "from-orange-500 to-amber-500" },
+    { icon: Code, label: "Focus", value: "Cybersecurity", color: "from-blue-500 to-cyan-500" },
+    { icon: Target, label: "Goal", value: "CompTIA Security+", color: "from-orange-500 to-amber-500" },
   ];
 
   const containerVariants = {
@@ -125,16 +125,16 @@ const AboutSection = () => {
               className="text-muted-foreground text-lg leading-relaxed mb-6"
               variants={itemVariants}
             >
-              I'm a <span className="text-primary font-semibold">passionate developer</span> pursuing 
-              a B.Tech in Computer Science at MIT ADT University, Pune.
+              I'm a <span className="text-primary font-semibold">Cybersecurity enthusiast</span> pursuing 
+              a B.Tech in CSE with a focus on Cybersecurity and Forensics at MIT ADT University, Pune.
             </motion.p>
             <motion.p
               className="text-muted-foreground text-lg leading-relaxed mb-8"
               variants={itemVariants}
             >
-              My interests span across <span className="text-primary font-semibold">web development</span>, 
-              <span className="text-primary font-semibold"> machine learning</span>, and 
-              <span className="text-primary font-semibold"> building creative solutions</span> that make a difference.
+              Skilled in <span className="text-primary font-semibold">Network Security</span>, 
+              <span className="text-primary font-semibold"> Zero Trust Architecture</span>, and 
+              <span className="text-primary font-semibold"> securing digital systems</span>. Currently preparing for CompTIA Security+.
             </motion.p>
 
             {/* Stats Grid */}

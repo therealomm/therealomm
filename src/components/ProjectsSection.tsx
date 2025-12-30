@@ -16,10 +16,10 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "Smart Detection App",
+    title: "PhishGuard - Phishing Detection",
     description:
-      "AI-powered detection system using Machine Learning and Large Language Models for intelligent classification.",
-    tech: ["Python", "Flask", "React/Next.js", "MongoDB", "LLM"],
+      "AI-powered phishing detection system for Email and SMS using Machine Learning and Large Language Models.",
+    tech: ["Python", "Flask", "React/Next.js", "MongoDB", "Machine Learning"],
     icon: Globe,
     color: "from-violet-500 to-purple-500",
     github: "https://github.com/therealomm",
