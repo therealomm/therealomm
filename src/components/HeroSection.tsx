@@ -106,7 +106,7 @@ const HeroSection = () => {
               </span>
             </h1>
             <motion.div 
-              className="w-28 h-28 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-full overflow-hidden border-2 border-primary/50 shadow-lg shadow-primary/20"
+              className="w-36 h-36 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-full overflow-hidden border-2 border-primary/50 shadow-lg shadow-primary/20"
               whileHover={{ scale: 1.1 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
