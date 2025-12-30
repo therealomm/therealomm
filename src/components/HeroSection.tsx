@@ -98,9 +98,12 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-display">
-              <span className="text-foreground">Hi, I'm </span>
-              <span className="text-gradient">Om Jagtap</span>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-display flex flex-col">
+              <span className="text-foreground">Hi,</span>
+              <span>
+                <span className="text-foreground">I'm </span>
+                <span className="text-gradient">Om Jagtap</span>
+              </span>
             </h1>
             <motion.div 
               className="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border-2 border-primary/50 shadow-lg shadow-primary/20"
