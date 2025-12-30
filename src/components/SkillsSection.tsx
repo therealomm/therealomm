@@ -268,7 +268,7 @@ const SkillsSection = () => {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          <h3 className="text-2xl font-bold mb-8 flex items-center gap-2 font-display text-center justify-center">
+          <h3 className="text-2xl font-bold mb-8 flex items-center gap-2 font-display">
             <Wrench className="w-6 h-6 text-primary" />
             Tools
           </h3>
