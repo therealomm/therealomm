@@ -25,6 +25,15 @@ const projects: Project[] = [
     github: "https://github.com/therealomm/LYCSF204",
   },
   {
+    title: "Phishing URL Detection using ResMLP",
+    description:
+      "Machine Learning–based URL classification system that detects malicious/phishing websites using feature extraction, WHOIS data, Google search results, HTML content patterns, and trained deep learning models.",
+    tech: ["Python", "PyTorch", "SKLearn", "ResMLP", "WHOIS"],
+    icon: Shield,
+    color: "from-red-500 to-orange-500",
+    github: "https://github.com/therealomm",
+  },
+  {
     title: "Sentiment Analysis Using NLP",
     description: "Deep learning-based natural language processing system for sentiment classification and analysis.",
     tech: ["Python", "NLP", "Deep Learning", "TensorFlow"],
@@ -172,7 +181,7 @@ const ProjectsSection = () => {
                     )}
                     {project.demo && (
                       <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                        <Button variant="cyber" size="sm" className="group/btn">
+                        <Button variant="default" size="sm" className="group/btn">
                           <ExternalLink className="w-4 h-4 group-hover/btn:rotate-12 transition-transform" />
                           Demo
                         </Button>
@@ -202,7 +211,7 @@ const ProjectsSection = () => {
           transition={{ duration: 0.6, delay: 0.6 }}
         >
           <a href="https://github.com/therealomm" target="_blank" rel="noopener noreferrer">
-            <Button variant="cyber" size="lg" className="group">
+            <Button variant="glow" size="lg" className="group">
               <motion.span className="flex items-center gap-2" whileHover={{ scale: 1.05 }}>
                 <Github className="w-5 h-5 group-hover:rotate-12 transition-transform" />
                 View All Projects on GitHub
