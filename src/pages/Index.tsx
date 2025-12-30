@@ -1,13 +1,46 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Helmet } from "react-helmet-async";
+import Navbar from "@/components/Navbar";
+import HeroSection from "@/components/HeroSection";
+import AboutSection from "@/components/AboutSection";
+import ExperienceSection from "@/components/ExperienceSection";
+import SkillsSection from "@/components/SkillsSection";
+import ProjectsSection from "@/components/ProjectsSection";
+import ContactSection from "@/components/ContactSection";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <>
+      <Helmet>
+        <title>Om Jagtap | Cybersecurity Professional</title>
+        <meta
+          name="description"
+          content="Om Jagtap - Cybersecurity enthusiast specializing in network security, Zero Trust Architecture, and ethical hacking. B.Tech CSE student at MIT ADT University, Pune."
+        />
+        <meta
+          name="keywords"
+          content="Om Jagtap, Cybersecurity, Network Security, Zero Trust, Ethical Hacking, Portfolio, Developer"
+        />
+        <meta property="og:title" content="Om Jagtap | Cybersecurity Professional" />
+        <meta
+          property="og:description"
+          content="Cybersecurity enthusiast specializing in network security, Zero Trust Architecture, and ethical hacking."
+        />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://therealomm.github.io/portfolio/" />
+      </Helmet>
+
+      <main className="min-h-screen">
+        <Navbar />
+        <HeroSection />
+        <AboutSection />
+        <ExperienceSection />
+        <SkillsSection />
+        <ProjectsSection />
+        <ContactSection />
+        <Footer />
+      </main>
+    </>
   );
 };
 
