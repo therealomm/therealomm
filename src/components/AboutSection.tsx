@@ -1,16 +1,16 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { GraduationCap, MapPin, Shield, Target } from "lucide-react";
+import { GraduationCap, MapPin, Target, Code } from "lucide-react";
 
 const AboutSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
   const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
 
   const stats = [
-    { icon: GraduationCap, label: "B.Tech CSE", value: "Cybersecurity", color: "from-cyan-500 to-blue-500" },
-    { icon: MapPin, label: "Location", value: "Pune, India", color: "from-green-500 to-emerald-500" },
-    { icon: Shield, label: "Focus", value: "Zero Trust", color: "from-purple-500 to-pink-500" },
-    { icon: Target, label: "Goal", value: "CompTIA Security+", color: "from-orange-500 to-red-500" },
+    { icon: GraduationCap, label: "Education", value: "B.Tech CSE", color: "from-violet-500 to-purple-500" },
+    { icon: MapPin, label: "Location", value: "Pune, India", color: "from-pink-500 to-rose-500" },
+    { icon: Code, label: "Focus", value: "Full Stack", color: "from-blue-500 to-cyan-500" },
+    { icon: Target, label: "Goal", value: "Innovation", color: "from-orange-500 to-amber-500" },
   ];
 
   const containerVariants = {
@@ -51,18 +51,18 @@ const AboutSection = () => {
           transition={{ duration: 0.6 }}
         >
           <motion.span
-            className="font-mono text-primary text-sm tracking-wider uppercase"
+            className="text-primary text-sm tracking-wider uppercase font-medium"
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : {}}
             transition={{ delay: 0.2 }}
           >
-            &lt;about&gt;
+            About Me
           </motion.span>
-          <h2 className="text-3xl md:text-5xl font-bold mt-2 mb-4">
+          <h2 className="text-3xl md:text-5xl font-bold mt-2 mb-4 font-display">
             Who <span className="text-gradient">I Am</span>
           </h2>
           <motion.div
-            className="w-20 h-1 bg-primary mx-auto rounded-full"
+            className="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full"
             initial={{ scaleX: 0 }}
             animate={isInView ? { scaleX: 1 } : {}}
             transition={{ duration: 0.6, delay: 0.3 }}
@@ -79,14 +79,14 @@ const AboutSection = () => {
           <motion.div variants={itemVariants} className="relative">
             <div className="relative max-w-md mx-auto">
               {/* Outer glow */}
-              <div className="absolute inset-0 bg-primary/20 rounded-2xl blur-2xl" />
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-2xl" />
               
               {/* Main card */}
-              <div className="relative glass rounded-2xl p-8 border border-primary/30">
+              <div className="relative glass rounded-2xl p-8 border border-border/50">
                 {/* Corner accents */}
                 <div className="absolute top-0 left-0 w-10 h-10 border-t-2 border-l-2 border-primary rounded-tl-2xl" />
-                <div className="absolute top-0 right-0 w-10 h-10 border-t-2 border-r-2 border-primary rounded-tr-2xl" />
-                <div className="absolute bottom-0 left-0 w-10 h-10 border-b-2 border-l-2 border-primary rounded-bl-2xl" />
+                <div className="absolute top-0 right-0 w-10 h-10 border-t-2 border-r-2 border-accent rounded-tr-2xl" />
+                <div className="absolute bottom-0 left-0 w-10 h-10 border-b-2 border-l-2 border-accent rounded-bl-2xl" />
                 <div className="absolute bottom-0 right-0 w-10 h-10 border-b-2 border-r-2 border-primary rounded-br-2xl" />
 
                 {/* Content */}
@@ -100,29 +100,21 @@ const AboutSection = () => {
                       repeat: Infinity,
                       ease: "easeInOut",
                     }}
+                    className="w-24 h-24 mx-auto mb-6 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center"
                   >
-                    <Shield className="w-24 h-24 mx-auto text-primary mb-6" />
+                    <span className="text-4xl font-bold text-primary-foreground font-display">O</span>
                   </motion.div>
                   <motion.p
-                    className="font-mono text-primary text-xl font-medium"
+                    className="text-xl font-medium text-gradient font-display"
                     animate={{ opacity: [0.7, 1, 0.7] }}
                     transition={{ duration: 2, repeat: Infinity }}
                   >
-                    Securing the Digital World
+                    Building the Future
                   </motion.p>
                   <p className="text-muted-foreground mt-4 text-sm">
-                    One vulnerability at a time
+                    One project at a time
                   </p>
                 </div>
-                
-                {/* Dot pattern background */}
-                <div 
-                  className="absolute inset-0 opacity-10 rounded-2xl overflow-hidden"
-                  style={{
-                    backgroundImage: `radial-gradient(circle at 2px 2px, hsl(var(--primary)) 1px, transparent 0)`,
-                    backgroundSize: "24px 24px",
-                  }}
-                />
               </div>
             </div>
           </motion.div>
@@ -133,18 +125,16 @@ const AboutSection = () => {
               className="text-muted-foreground text-lg leading-relaxed mb-6"
               variants={itemVariants}
             >
-              I'm a <span className="text-primary font-semibold">Cybersecurity enthusiast</span> pursuing 
-              a B.Tech in Computer Science with a focus on <span className="text-primary font-semibold">Cybersecurity and Forensics</span> at 
-              MIT ADT University, Pune.
+              I'm a <span className="text-primary font-semibold">passionate developer</span> pursuing 
+              a B.Tech in Computer Science at MIT ADT University, Pune.
             </motion.p>
             <motion.p
               className="text-muted-foreground text-lg leading-relaxed mb-8"
               variants={itemVariants}
             >
-              My expertise spans across <span className="text-primary font-semibold">network security</span>, 
-              <span className="text-primary font-semibold"> vulnerability analysis</span>, and 
-              <span className="text-primary font-semibold"> Zero Trust Architecture</span>. Currently preparing 
-              for CompTIA Security+ to strengthen my foundational security knowledge.
+              My interests span across <span className="text-primary font-semibold">web development</span>, 
+              <span className="text-primary font-semibold"> machine learning</span>, and 
+              <span className="text-primary font-semibold"> building creative solutions</span> that make a difference.
             </motion.p>
 
             {/* Stats Grid */}
@@ -173,16 +163,6 @@ const AboutSection = () => {
           </motion.div>
         </motion.div>
       </div>
-
-      {/* Closing tag */}
-      <motion.div
-        className="text-center mt-16"
-        initial={{ opacity: 0 }}
-        animate={isInView ? { opacity: 1 } : {}}
-        transition={{ delay: 0.8 }}
-      >
-        <span className="font-mono text-primary/50 text-sm">&lt;/about&gt;</span>
-      </motion.div>
     </section>
   );
 };

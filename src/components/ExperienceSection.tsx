@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Briefcase, Award, Calendar } from "lucide-react";
+import { Award, Calendar } from "lucide-react";
 
 interface Experience {
   title: string;
@@ -12,49 +12,49 @@ interface Experience {
 
 const experiences: Experience[] = [
   {
-    title: "Cybersecurity Intern",
+    title: "Software Development Intern",
     company: "Prodigy Infotech",
     period: "Apr 2024 – May 2024",
     type: "work",
     description:
-      "Gained practical exposure to cybersecurity principles, tools, and practices.",
+      "Gained practical exposure to software development principles, tools, and practices.",
     details: [
-      "Hands-on experience with security tools",
-      "Real-world vulnerability assessment",
+      "Hands-on experience with development tools",
+      "Real-world project experience",
       "CIN: PIT/APR24/5933",
     ],
   },
   {
-    title: "Zero Trust Cloud Security",
+    title: "Cloud Computing Program",
     company: "Zscaler (AICTE)",
     period: "Jan 2024 – Mar 2024",
     type: "work",
     description:
-      "Virtual internship focused on Zero Trust Architecture and cloud security.",
+      "Virtual program focused on cloud architecture and modern development practices.",
   },
   {
-    title: "Network Security Associate",
+    title: "Network Fundamentals",
     company: "Fortinet (AICTE)",
     period: "Sep 2023 – Nov 2023",
     type: "work",
     description:
-      "Comprehensive training on network security fundamentals and Fortinet solutions.",
+      "Comprehensive training on network fundamentals and infrastructure.",
   },
   {
-    title: "Cyber Security Internship",
+    title: "Technology Internship",
     company: "Palo Alto Networks (AICTE)",
     period: "May 2023 – Jun 2023",
     type: "work",
     description:
-      "Foundation in cybersecurity concepts and Palo Alto security solutions.",
+      "Foundation in technology concepts and modern solutions.",
   },
 ];
 
 const certifications = [
-  { name: "Zscaler Zero Trust Cyber Associate (ZTCA)", issuer: "Zscaler" },
-  { name: "Ethical Hacking Essentials", issuer: "EC-Council CodeRed" },
+  { name: "Cloud Computing Foundations", issuer: "Zscaler" },
+  { name: "Programming Essentials", issuer: "EC-Council CodeRed" },
   { name: "Fundamentals of Digital Marketing", issuer: "Google" },
-  { name: "The Foundations of Cyber Security", issuer: "Coursera" },
+  { name: "Introduction to Computer Science", issuer: "Coursera" },
   { name: "Microsoft Gen AI Foundations", issuer: "Upgrad" },
 ];
 
@@ -92,13 +92,13 @@ const ExperienceSection = () => {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <span className="font-mono text-primary text-sm tracking-wider uppercase">
-            &lt;experience&gt;
+          <span className="text-primary text-sm tracking-wider uppercase font-medium">
+            Experience
           </span>
-          <h2 className="text-3xl md:text-5xl font-bold mt-2 mb-4">
-            Professional <span className="text-gradient">Journey</span>
+          <h2 className="text-3xl md:text-5xl font-bold mt-2 mb-4 font-display">
+            My <span className="text-gradient">Journey</span>
           </h2>
-          <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
+          <div className="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full" />
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8">
@@ -106,7 +106,7 @@ const ExperienceSection = () => {
           <div className="lg:col-span-2">
             <div className="relative">
               {/* Timeline line */}
-              <div className="absolute left-4 md:left-8 top-0 bottom-0 w-0.5 bg-primary/30" />
+              <div className="absolute left-4 md:left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-accent to-primary/30" />
 
               {experiences.map((exp, index) => (
                 <div
@@ -124,12 +124,12 @@ const ExperienceSection = () => {
                   <div className="glass p-6 rounded-xl hover:border-primary/50 transition-all duration-300 group">
                     <div className="flex flex-wrap items-start justify-between gap-2 mb-3">
                       <div>
-                        <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
+                        <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors font-display">
                           {exp.title}
                         </h3>
                         <p className="text-primary font-medium">{exp.company}</p>
                       </div>
-                      <span className="flex items-center gap-1 text-muted-foreground text-sm font-mono bg-secondary px-3 py-1 rounded-full">
+                      <span className="flex items-center gap-1 text-muted-foreground text-sm bg-secondary px-3 py-1 rounded-full">
                         <Calendar className="w-3 h-3" />
                         {exp.period}
                       </span>
@@ -165,7 +165,7 @@ const ExperienceSection = () => {
             <div className="glass p-6 rounded-xl sticky top-24">
               <div className="flex items-center gap-2 mb-6">
                 <Award className="w-6 h-6 text-primary" />
-                <h3 className="text-xl font-bold">Certifications</h3>
+                <h3 className="text-xl font-bold font-display">Certifications</h3>
               </div>
               <div className="space-y-4">
                 {certifications.map((cert, index) => (
@@ -185,17 +185,6 @@ const ExperienceSection = () => {
             </div>
           </div>
         </div>
-      </div>
-
-      {/* Closing tag */}
-      <div
-        className={`text-center mt-16 transition-all duration-700 delay-500 ${
-          isVisible ? "opacity-100" : "opacity-0"
-        }`}
-      >
-        <span className="font-mono text-primary/50 text-sm">
-          &lt;/experience&gt;
-        </span>
       </div>
     </section>
   );

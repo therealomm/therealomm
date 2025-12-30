@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Shield } from "lucide-react";
+import { Menu, X, Sparkles } from "lucide-react";
 import { Button } from "./ui/button";
 
 const navLinks = [
@@ -39,10 +39,10 @@ const Navbar = () => {
       <div className="container mx-auto px-4 flex items-center justify-between">
         <a
           href="#"
-          className="flex items-center gap-2 text-primary font-mono font-bold text-xl hover:glow-text transition-all duration-300"
+          className="flex items-center gap-2 text-primary font-display font-bold text-xl hover:opacity-80 transition-all duration-300"
         >
-          <Shield className="w-6 h-6" />
-          <span className="hidden sm:inline">OM.SEC</span>
+          <Sparkles className="w-5 h-5" />
+          <span className="hidden sm:inline">Om.</span>
         </a>
 
         {/* Desktop Navigation */}
@@ -58,7 +58,7 @@ const Navbar = () => {
             </button>
           ))}
           <Button
-            variant="cyber"
+            variant="default"
             size="sm"
             onClick={() => handleNavClick("#contact")}
           >
@@ -96,7 +96,7 @@ const Navbar = () => {
             </button>
           ))}
           <Button
-            variant="cyber"
+            variant="default"
             onClick={() => handleNavClick("#contact")}
             className="w-full"
           >
