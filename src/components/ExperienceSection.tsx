@@ -14,52 +14,53 @@ interface Experience {
 
 const experiences: Experience[] = [
   {
-    title: "Software Development Intern",
+    title: "Cybersecurity Intern",
     company: "Prodigy Infotech",
     period: "Apr 2024 – May 2024",
     type: "work",
     description:
-      "Gained practical exposure to software development principles, tools, and practices.",
+      "Gained practical exposure to cybersecurity principles, tools, and practices.",
     details: [
-      "Hands-on experience with development tools",
-      "Real-world project experience",
+      "Hands-on experience with security tools",
+      "Real-world cybersecurity projects",
       "CIN: PIT/APR24/5933",
     ],
   },
   {
-    title: "Cloud Computing Program",
+    title: "Zero Trust Cloud Security Virtual Internship",
     company: "Zscaler (AICTE)",
     period: "Jan 2024 – Mar 2024",
     type: "work",
     description:
-      "Virtual program focused on cloud architecture and modern development practices.",
+      "Virtual internship focused on Zero Trust Architecture and cloud security practices.",
+    verifyLink: "https://aictecert.eduskillsfoundation.org/pages/home/verify.php?cert=e474774b4df6795f24493dcda06c33a3",
   },
   {
-    title: "Network Fundamentals",
+    title: "Network Security Associate Virtual Internship",
     company: "Fortinet (AICTE)",
     period: "Sep 2023 – Nov 2023",
     type: "work",
     description:
-      "Comprehensive training on network fundamentals and infrastructure.",
+      "Comprehensive training on network security fundamentals and infrastructure.",
     verifyLink: "https://aictecert.eduskillsfoundation.org/pages/home/verify.php?cert=deec718fb18fd3f6b13e6a149f69bb26",
   },
   {
-    title: "Technology Internship",
+    title: "Cyber Security Virtual Internship",
     company: "Palo Alto Networks (AICTE)",
     period: "May 2023 – Jun 2023",
     type: "work",
     description:
-      "Foundation in technology concepts and modern solutions.",
+      "Foundation in cybersecurity concepts and modern security solutions.",
     verifyLink: "https://aictecert.eduskillsfoundation.org/pages/home/verify.php?cert=022d0f668b7a9c977cce768b6b4d2fb6",
   },
 ];
 
-const certifications = [
-  { name: "Cloud Computing Foundations", issuer: "Zscaler", verifyLink: "https://aictecert.eduskillsfoundation.org/pages/home/verify.php?cert=e474774b4df6795f24493dcda06c33a3" },
-  { name: "Programming Essentials", issuer: "EC-Council CodeRed" },
+const certifications: { name: string; issuer: string; verifyLink?: string }[] = [
+  { name: "Zscaler Zero Trust Cyber Associate (ZTCA)", issuer: "Zscaler" },
+  { name: "Ethical Hacking Essentials", issuer: "EC-Council CodeRed" },
   { name: "Fundamentals of Digital Marketing", issuer: "Google" },
-  { name: "Introduction to Computer Science", issuer: "Coursera" },
-  { name: "Microsoft Gen AI Foundations", issuer: "Upgrad" },
+  { name: "The Foundations of Cyber Security", issuer: "Coursera" },
+  { name: "Microsoft Gen AI Foundations Certificate Program", issuer: "Upgrad" },
 ];
 
 const ExperienceSection = () => {
