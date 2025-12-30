@@ -13,6 +13,19 @@ import {
   BarChart3,
   CheckCircle,
   Code,
+  Wifi,
+  Target,
+  Bug,
+  Radar,
+  HardDrive,
+  Activity,
+  Database,
+  Cloud,
+  Github,
+  Figma,
+  Palette,
+  Image,
+  Wrench,
 } from "lucide-react";
 
 interface Skill {
@@ -20,6 +33,11 @@ interface Skill {
   icon: React.ElementType;
   level: number;
   category: "technical" | "soft";
+}
+
+interface Tool {
+  name: string;
+  icon: React.ElementType;
 }
 
 const skills: Skill[] = [
@@ -35,6 +53,26 @@ const skills: Skill[] = [
   { name: "Communication", icon: MessageSquare, level: 85, category: "soft" },
   { name: "Business Analytics", icon: BarChart3, level: 75, category: "soft" },
   { name: "Decision Making", icon: CheckCircle, level: 82, category: "soft" },
+];
+
+const cyberTools: Tool[] = [
+  { name: "Wireshark", icon: Wifi },
+  { name: "Nmap", icon: Target },
+  { name: "Metasploit", icon: Bug },
+  { name: "Burp Suite", icon: Radar },
+  { name: "Autopsy", icon: Search },
+  { name: "Volatility", icon: Activity },
+  { name: "FTK Imager", icon: HardDrive },
+  { name: "Splunk", icon: Database },
+  { name: "AWS Sentinel", icon: Shield },
+];
+
+const otherTools: Tool[] = [
+  { name: "AWS", icon: Cloud },
+  { name: "GitHub", icon: Github },
+  { name: "Figma", icon: Figma },
+  { name: "Canva", icon: Palette },
+  { name: "GIMP", icon: Image },
 ];
 
 const SkillsSection = () => {
@@ -112,14 +150,12 @@ const SkillsSection = () => {
                   variants={itemVariants}
                   whileHover={{ scale: 1.02, x: 10 }}
                 >
-                  {/* Animated background gradient */}
                   <motion.div
                     className="absolute inset-0 bg-gradient-to-r from-primary/10 to-transparent"
                     initial={{ x: "-100%" }}
                     whileHover={{ x: "0%" }}
                     transition={{ duration: 0.3 }}
                   />
-
                   <div className="flex items-center justify-between mb-2 relative z-10">
                     <div className="flex items-center gap-3">
                       <motion.div
@@ -146,7 +182,6 @@ const SkillsSection = () => {
                       animate={isInView ? { width: `${skill.level}%` } : {}}
                       transition={{ duration: 1, delay: 0.3 + index * 0.1, ease: "easeOut" }}
                     >
-                      {/* Animated gradient bar */}
                       <div className="absolute inset-0 bg-gradient-to-r from-primary via-accent to-primary bg-[length:200%_100%] animate-shimmer" />
                     </motion.div>
                   </div>
@@ -174,7 +209,6 @@ const SkillsSection = () => {
                   whileHover={{ scale: 1.05, y: -5 }}
                 >
                   <div className="relative w-20 h-20 mx-auto mb-3">
-                    {/* Animated circular progress */}
                     <svg className="w-full h-full -rotate-90">
                       <circle
                         cx="40"
@@ -199,8 +233,6 @@ const SkillsSection = () => {
                         }}
                       />
                     </svg>
-                    
-                    {/* Center icon */}
                     <motion.div
                       className="absolute inset-0 flex items-center justify-center"
                       whileHover={{ rotate: 360, scale: 1.2 }}
@@ -208,8 +240,6 @@ const SkillsSection = () => {
                     >
                       <skill.icon className="w-6 h-6 text-primary" />
                     </motion.div>
-
-                    {/* Glow effect */}
                     <motion.div
                       className="absolute inset-0 rounded-full bg-primary/20 blur-lg"
                       animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.5, 0.3] }}
@@ -225,6 +255,79 @@ const SkillsSection = () => {
                   >
                     {skill.level}%
                   </motion.p>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+
+        {/* Tools Section */}
+        <div className="grid lg:grid-cols-2 gap-12 mt-16">
+          {/* Cybersecurity Tools */}
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            animate={isInView ? "visible" : "hidden"}
+          >
+            <h3 className="text-xl font-bold mb-6 flex items-center gap-2 font-display">
+              <Wrench className="w-5 h-5 text-primary" />
+              Cybersecurity Tools
+            </h3>
+            <div className="grid grid-cols-3 gap-3">
+              {cyberTools.map((tool, index) => (
+                <motion.div
+                  key={tool.name}
+                  className="glass p-4 rounded-xl group hover:border-primary/50 transition-all duration-300 text-center relative overflow-hidden"
+                  variants={itemVariants}
+                  whileHover={{ scale: 1.05, y: -5 }}
+                >
+                  <motion.div
+                    className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100"
+                    transition={{ duration: 0.3 }}
+                  />
+                  <motion.div
+                    className="w-10 h-10 mx-auto mb-2 flex items-center justify-center"
+                    whileHover={{ rotate: 360, scale: 1.2 }}
+                    transition={{ duration: 0.5 }}
+                  >
+                    <tool.icon className="w-6 h-6 text-primary" />
+                  </motion.div>
+                  <p className="font-medium text-xs relative z-10">{tool.name}</p>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Other Tools */}
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            animate={isInView ? "visible" : "hidden"}
+          >
+            <h3 className="text-xl font-bold mb-6 flex items-center gap-2 font-display">
+              <Palette className="w-5 h-5 text-primary" />
+              Other Tools
+            </h3>
+            <div className="grid grid-cols-3 gap-3">
+              {otherTools.map((tool, index) => (
+                <motion.div
+                  key={tool.name}
+                  className="glass p-4 rounded-xl group hover:border-primary/50 transition-all duration-300 text-center relative overflow-hidden"
+                  variants={itemVariants}
+                  whileHover={{ scale: 1.05, y: -5 }}
+                >
+                  <motion.div
+                    className="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent opacity-0 group-hover:opacity-100"
+                    transition={{ duration: 0.3 }}
+                  />
+                  <motion.div
+                    className="w-10 h-10 mx-auto mb-2 flex items-center justify-center"
+                    whileHover={{ rotate: 360, scale: 1.2 }}
+                    transition={{ duration: 0.5 }}
+                  >
+                    <tool.icon className="w-6 h-6 text-primary" />
+                  </motion.div>
+                  <p className="font-medium text-xs relative z-10">{tool.name}</p>
                 </motion.div>
               ))}
             </div>
