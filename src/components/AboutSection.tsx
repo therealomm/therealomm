@@ -9,8 +9,8 @@ const AboutSection = () => {
   const stats = [
     { icon: GraduationCap, label: "B.Tech CSE", value: "Cybersecurity", color: "from-cyan-500 to-blue-500" },
     { icon: MapPin, label: "Location", value: "Pune, India", color: "from-green-500 to-emerald-500" },
-    { icon: Shield, label: "Focus", value: "Zero Trust", color: "from-purple-500 to-pink-500" },
-    { icon: Target, label: "Goal", value: "CompTIA Security+", color: "from-orange-500 to-red-500" },
+    { icon: Shield, label: "Focus", value: "Cyber Security & AI", color: "from-purple-500 to-pink-500" },
+    { icon: Target, label: "Goal", value: "Offensive & Defensive Security", color: "from-orange-500 to-red-500" },
   ];
 
   const containerVariants = {
