@@ -1,7 +1,6 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { GraduationCap, MapPin, Shield, Target, Zap } from "lucide-react";
-import AnimatedCard from "./AnimatedCard";
+import { GraduationCap, MapPin, Shield, Target } from "lucide-react";
 
 const AboutSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -78,70 +77,54 @@ const AboutSection = () => {
         >
           {/* Left - Visual */}
           <motion.div variants={itemVariants} className="relative">
-            <AnimatedCard className="relative aspect-square max-w-md mx-auto group perspective-1000">
-              <div className="relative w-full h-full">
-                {/* Decorative layers */}
-                <motion.div
-                  className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-primary/10 rounded-2xl"
-                  animate={{ rotate: [0, 5, 0] }}
-                  transition={{ duration: 10, repeat: Infinity }}
-                />
-                <motion.div
-                  className="absolute inset-4 border-2 border-primary/30 rounded-2xl"
-                  animate={{ rotate: [0, -3, 0] }}
-                  transition={{ duration: 8, repeat: Infinity }}
-                />
-                <div className="absolute inset-8 glass rounded-xl flex items-center justify-center overflow-hidden">
-                  {/* Animated background pattern */}
-                  <div className="absolute inset-0 opacity-20">
-                    <div className="absolute inset-0" style={{
-                      backgroundImage: `radial-gradient(circle at 2px 2px, hsl(var(--primary)) 1px, transparent 0)`,
-                      backgroundSize: "20px 20px",
-                    }} />
-                  </div>
-                  
-                  <div className="text-center p-6 relative z-10">
-                    <motion.div
-                      animate={{
-                        y: [0, -10, 0],
-                        rotateY: [0, 360],
-                      }}
-                      transition={{
-                        y: { duration: 3, repeat: Infinity, ease: "easeInOut" },
-                        rotateY: { duration: 8, repeat: Infinity, ease: "linear" },
-                      }}
-                    >
-                      <Shield className="w-24 h-24 mx-auto text-primary mb-4" />
-                    </motion.div>
-                    <motion.p
-                      className="font-mono text-primary text-lg"
-                      animate={{ opacity: [0.5, 1, 0.5] }}
-                      transition={{ duration: 2, repeat: Infinity }}
-                    >
-                      Securing the Digital World
-                    </motion.p>
-                  </div>
+            <div className="relative max-w-md mx-auto">
+              {/* Outer glow */}
+              <div className="absolute inset-0 bg-primary/20 rounded-2xl blur-2xl" />
+              
+              {/* Main card */}
+              <div className="relative glass rounded-2xl p-8 border border-primary/30">
+                {/* Corner accents */}
+                <div className="absolute top-0 left-0 w-10 h-10 border-t-2 border-l-2 border-primary rounded-tl-2xl" />
+                <div className="absolute top-0 right-0 w-10 h-10 border-t-2 border-r-2 border-primary rounded-tr-2xl" />
+                <div className="absolute bottom-0 left-0 w-10 h-10 border-b-2 border-l-2 border-primary rounded-bl-2xl" />
+                <div className="absolute bottom-0 right-0 w-10 h-10 border-b-2 border-r-2 border-primary rounded-br-2xl" />
 
-                  {/* Orbiting elements */}
+                {/* Content */}
+                <div className="text-center py-8">
                   <motion.div
-                    className="absolute w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center"
                     animate={{
-                      rotate: 360,
+                      y: [0, -10, 0],
                     }}
-                    transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
-                    style={{ transformOrigin: "100px 100px" }}
+                    transition={{
+                      duration: 3,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                    }}
                   >
-                    <Zap className="w-4 h-4 text-primary" />
+                    <Shield className="w-24 h-24 mx-auto text-primary mb-6" />
                   </motion.div>
+                  <motion.p
+                    className="font-mono text-primary text-xl font-medium"
+                    animate={{ opacity: [0.7, 1, 0.7] }}
+                    transition={{ duration: 2, repeat: Infinity }}
+                  >
+                    Securing the Digital World
+                  </motion.p>
+                  <p className="text-muted-foreground mt-4 text-sm">
+                    One vulnerability at a time
+                  </p>
                 </div>
                 
-                {/* Corner accents with glow */}
-                <div className="absolute top-0 left-0 w-10 h-10 border-t-2 border-l-2 border-primary shadow-[0_0_10px_hsl(var(--primary)/0.5)]" />
-                <div className="absolute top-0 right-0 w-10 h-10 border-t-2 border-r-2 border-primary shadow-[0_0_10px_hsl(var(--primary)/0.5)]" />
-                <div className="absolute bottom-0 left-0 w-10 h-10 border-b-2 border-l-2 border-primary shadow-[0_0_10px_hsl(var(--primary)/0.5)]" />
-                <div className="absolute bottom-0 right-0 w-10 h-10 border-b-2 border-r-2 border-primary shadow-[0_0_10px_hsl(var(--primary)/0.5)]" />
+                {/* Dot pattern background */}
+                <div 
+                  className="absolute inset-0 opacity-10 rounded-2xl overflow-hidden"
+                  style={{
+                    backgroundImage: `radial-gradient(circle at 2px 2px, hsl(var(--primary)) 1px, transparent 0)`,
+                    backgroundSize: "24px 24px",
+                  }}
+                />
               </div>
-            </AnimatedCard>
+            </div>
           </motion.div>
 
           {/* Right - Content */}
