@@ -149,7 +149,7 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <span className="text-foreground">Hi, I'm </span>
-            <GlitchText className="text-gradient glow-text">Om Jagtap</GlitchText>
+            <GlitchText className="text-gradient">Om Jagtap</GlitchText>
           </motion.h1>
 
           {/* Animated role */}
