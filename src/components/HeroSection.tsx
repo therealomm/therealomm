@@ -98,6 +98,10 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-display">
+              <span className="text-foreground">Hi, I'm </span>
+              <span className="text-gradient">Om Jagtap</span>
+            </h1>
             <motion.div 
               className="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden border-2 border-primary/50 shadow-lg shadow-primary/20"
               whileHover={{ scale: 1.1 }}
@@ -109,10 +113,6 @@ const HeroSection = () => {
                 className="w-full h-full object-cover"
               />
             </motion.div>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-display">
-              <span className="text-foreground">Hi, I'm </span>
-              <span className="text-gradient">Om Jagtap</span>
-            </h1>
           </motion.div>
 
           {/* Animated role */}
