@@ -28,6 +28,7 @@ const experiences: Experience[] = [
   {
     title: "Cybersecurity Intern",
     company: "Prodigy Infotech",
+    companyLink: "https://prodigyinfotech.dev/",
     period: "Apr 2024 – May 2024",
     type: "work",
     description:
