@@ -9,7 +9,7 @@ import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import ParticleField from "@/components/ParticleField";
 import MatrixRain from "@/components/MatrixRain";
-import CursorGlow from "@/components/CursorGlow";
+
 import FloatingIcons from "@/components/FloatingIcons";
 
 const Index = () => {
@@ -38,7 +38,7 @@ const Index = () => {
       <MatrixRain />
       <ParticleField />
       <FloatingIcons />
-      <CursorGlow />
+      
 
       <main className="min-h-screen relative">
         <Navbar />
