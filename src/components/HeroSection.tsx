@@ -4,7 +4,7 @@ import { ChevronDown, Github, Linkedin, Mail, FileText, Sparkles } from "lucide-
 import { Button } from "./ui/button";
 
 const roles = [
-  "Software Developer",
+  "Cybersecurity & AI",
   "Tech Enthusiast",
   "Problem Solver",
   "Creative Thinker",
