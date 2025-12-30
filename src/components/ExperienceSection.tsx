@@ -58,9 +58,9 @@ const experiences: Experience[] = [
 const certifications: { name: string; issuer: string; verifyLink?: string; status?: string }[] = [
   { name: "Zscaler Zero Trust Cyber Associate (ZTCA)", issuer: "Zscaler", verifyLink: "https://verify.skilljar.com/c/nxpb6s6itnrz" },
   { name: "Ethical Hacking Essentials", issuer: "EC-Council CodeRed", verifyLink: "https://learn.eccouncil.org/certificate/4f955121-53c4-4bc0-876a-9549a3031642" },
-  { name: "Fundamentals of Digital Marketing", issuer: "Google", verifyLink: "https://drive.google.com/file/d/1TAnAHvCD_DPraBSHtXmnrWlqCTle5VHC/view?usp=drivesdk" },
   { name: "The Foundations of Cyber Security", issuer: "Coursera", verifyLink: "https://www.coursera.org/account/accomplishments/verify/34D26BYJD9L2" },
   { name: "Microsoft Gen AI Foundations Certificate Program", issuer: "Upgrad", status: "Ongoing" },
+  { name: "Fundamentals of Digital Marketing", issuer: "Google", verifyLink: "https://drive.google.com/file/d/1TAnAHvCD_DPraBSHtXmnrWlqCTle5VHC/view?usp=drivesdk" },
 ];
 
 const ExperienceSection = () => {
