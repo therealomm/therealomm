@@ -98,7 +98,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-display flex flex-col">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-display flex flex-col text-left">
               <span className="text-foreground">Hello !</span>
               <span>
                 <span className="text-foreground">I'm </span>
