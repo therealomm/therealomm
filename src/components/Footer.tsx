@@ -20,7 +20,7 @@ const quotes = [
 ];
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
+  const currentYear = 2026;
   const randomQuote = useMemo(() => quotes[Math.floor(Math.random() * quotes.length)], []);
 
   return (
