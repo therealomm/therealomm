@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown, Github, Linkedin, Mail, FileText, Shield } from "lucide-react";
+import { ChevronDown, Github, Linkedin, Mail, FileText, Sparkles } from "lucide-react";
 import { Button } from "./ui/button";
 import profileImage from "@/assets/profile.jpeg";
 
@@ -86,7 +86,7 @@ const HeroSection = () => {
             className="mb-6"
           >
             <div className="inline-flex items-center gap-2 text-primary/80 text-sm md:text-base bg-primary/10 px-4 py-2 rounded-full border border-primary/20 backdrop-blur-sm">
-              <Shield className="w-4 h-4" />
+              <Sparkles className="w-4 h-4" />
               <span>Available for opportunities</span>
             </div>
           </motion.div>
