@@ -7,12 +7,7 @@ const AboutSection = () => {
   const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
 
   const stats = [
-    {
-      icon: GraduationCap,
-      label: "B.Tech CSE CyberSecurity and Forensics",
-      value: "Cybersecurity",
-      color: "from-cyan-500 to-blue-500",
-    },
+    { icon: GraduationCap, label: "B.Tech CSE", value: "Cybersecurity", color: "from-cyan-500 to-blue-500" },
     { icon: MapPin, label: "Location", value: "Pune, India", color: "from-green-500 to-emerald-500" },
     { icon: Shield, label: "Focus", value: "Zero Trust", color: "from-purple-500 to-pink-500" },
     { icon: Target, label: "Goal", value: "CompTIA Security+", color: "from-orange-500 to-red-500" },
