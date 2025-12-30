@@ -27,7 +27,7 @@ const projects: Project[] = [
   {
     title: "Phishing URL Detection using ResMLP",
     description:
-      "Machine Learning–based URL classification system that detects malicious/phishing websites using feature extraction, WHOIS data, Google search results, HTML content patterns, and trained deep learning models.",
+      "Machine Learning–based URL classification system that detects malicious/phishing websites using Deep Learning.",
     tech: ["Python", "PyTorch", "SKLearn", "ResMLP", "WHOIS"],
     icon: Shield,
     color: "from-red-500 to-orange-500",
