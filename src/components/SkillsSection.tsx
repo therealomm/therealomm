@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import {
-  Code,
+  Shield,
   Network,
   Search,
   Brain,
@@ -12,7 +12,7 @@ import {
   MessageSquare,
   BarChart3,
   CheckCircle,
-  Palette,
+  Code,
 } from "lucide-react";
 
 interface Skill {
@@ -23,10 +23,10 @@ interface Skill {
 }
 
 const skills: Skill[] = [
-  { name: "Web Development", icon: Code, level: 90, category: "technical" },
-  { name: "React & TypeScript", icon: Palette, level: 85, category: "technical" },
-  { name: "Problem Solving", icon: Search, level: 80, category: "technical" },
-  { name: "Python & Java", icon: Code, level: 75, category: "technical" },
+  { name: "Cyber Security", icon: Shield, level: 85, category: "technical" },
+  { name: "Network Security", icon: Network, level: 80, category: "technical" },
+  { name: "Vulnerability Analysis", icon: Search, level: 75, category: "technical" },
+  { name: "Java & Python", icon: Code, level: 80, category: "technical" },
   { name: "Machine Learning", icon: Brain, level: 70, category: "technical" },
   { name: "AI Tools & Automation", icon: Zap, level: 85, category: "technical" },
   { name: "Technical Documentation", icon: FileText, level: 80, category: "soft" },
@@ -101,7 +101,7 @@ const SkillsSection = () => {
             animate={isInView ? "visible" : "hidden"}
           >
             <h3 className="text-xl font-bold mb-6 flex items-center gap-2 font-display">
-              <Code className="w-5 h-5 text-primary" />
+              <Shield className="w-5 h-5 text-primary" />
               Technical Skills
             </h3>
             <div className="space-y-4">
