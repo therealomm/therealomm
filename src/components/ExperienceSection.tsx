@@ -5,6 +5,7 @@ import { Button } from "./ui/button";
 interface Experience {
   title: string;
   company: string;
+  companyLink?: string;
   period: string;
   type: "work" | "certification";
   description: string;
@@ -17,6 +18,7 @@ const experiences: Experience[] = [
   {
     title: "Project Intern",
     company: "Road2Tech",
+    companyLink: "https://www.road2tech.in",
     period: "Dec 2024 – Ongoing",
     type: "work",
     employmentType: "part-time",
@@ -149,7 +151,19 @@ const ExperienceSection = () => {
                             </span>
                           )}
                         </div>
-                        <p className="text-primary font-medium">{exp.company}</p>
+                        {exp.companyLink ? (
+                          <a 
+                            href={exp.companyLink} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-primary font-medium hover:underline flex items-center gap-1"
+                          >
+                            {exp.company}
+                            <ExternalLink className="w-3 h-3" />
+                          </a>
+                        ) : (
+                          <p className="text-primary font-medium">{exp.company}</p>
+                        )}
                       </div>
                       <span className="flex items-center gap-1 text-muted-foreground text-sm bg-secondary px-3 py-1 rounded-full">
                         <Calendar className="w-3 h-3" />
