@@ -91,13 +91,17 @@ const HeroSection = () => {
             </div>
           </motion.div>
 
-          {/* Profile picture */}
+          {/* Name with profile picture */}
           <motion.div
-            className="flex items-center justify-center mb-4"
+            className="flex items-center justify-center gap-4 mb-4"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-display">
+              <span className="text-foreground">Hi, I'm </span>
+              <span className="text-gradient">Om Jagtap</span>
+            </h1>
             <motion.div 
               className="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border-2 border-primary/50 shadow-lg shadow-primary/20"
               whileHover={{ scale: 1.1 }}
@@ -110,17 +114,6 @@ const HeroSection = () => {
               />
             </motion.div>
           </motion.div>
-
-          {/* Name */}
-          <motion.h1
-            className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 font-display"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-          >
-            <span className="text-foreground">Hi, I'm </span>
-            <span className="text-gradient">Om Jagtap</span>
-          </motion.h1>
 
           {/* Animated role */}
           <motion.div
