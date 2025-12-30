@@ -41,6 +41,7 @@ const experiences: Experience[] = [
     type: "work",
     description:
       "Comprehensive training on network fundamentals and infrastructure.",
+    verifyLink: "https://aictecert.eduskillsfoundation.org/pages/home/verify.php?cert=deec718fb18fd3f6b13e6a149f69bb26",
   },
   {
     title: "Technology Internship",
@@ -149,6 +150,17 @@ const ExperienceSection = () => {
                           </li>
                         ))}
                       </ul>
+                    )}
+                    {exp.verifyLink && (
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        className="mt-3 h-8 px-3 text-xs gap-1.5"
+                        onClick={() => window.open(exp.verifyLink, '_blank')}
+                      >
+                        <ExternalLink className="w-3 h-3" />
+                        Verify Certificate
+                      </Button>
                     )}
                   </div>
                 </div>
