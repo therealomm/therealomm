@@ -1,10 +1,9 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import {
-  Shield,
+  Code,
   Network,
   Search,
-  Code,
   Brain,
   Zap,
   FileText,
@@ -13,6 +12,7 @@ import {
   MessageSquare,
   BarChart3,
   CheckCircle,
+  Palette,
 } from "lucide-react";
 
 interface Skill {
@@ -23,10 +23,10 @@ interface Skill {
 }
 
 const skills: Skill[] = [
-  { name: "Cyber Security", icon: Shield, level: 90, category: "technical" },
-  { name: "Network Security", icon: Network, level: 85, category: "technical" },
-  { name: "Vulnerability Analysis", icon: Search, level: 80, category: "technical" },
-  { name: "Java & Python", icon: Code, level: 75, category: "technical" },
+  { name: "Web Development", icon: Code, level: 90, category: "technical" },
+  { name: "React & TypeScript", icon: Palette, level: 85, category: "technical" },
+  { name: "Problem Solving", icon: Search, level: 80, category: "technical" },
+  { name: "Python & Java", icon: Code, level: 75, category: "technical" },
   { name: "Machine Learning", icon: Brain, level: 70, category: "technical" },
   { name: "AI Tools & Automation", icon: Zap, level: 85, category: "technical" },
   { name: "Technical Documentation", icon: FileText, level: 80, category: "soft" },
@@ -79,14 +79,14 @@ const SkillsSection = () => {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
         >
-          <span className="font-mono text-primary text-sm tracking-wider uppercase">
-            &lt;skills&gt;
+          <span className="text-primary text-sm tracking-wider uppercase font-medium">
+            Skills
           </span>
-          <h2 className="text-3xl md:text-5xl font-bold mt-2 mb-4">
-            My <span className="text-gradient">Arsenal</span>
+          <h2 className="text-3xl md:text-5xl font-bold mt-2 mb-4 font-display">
+            My <span className="text-gradient">Expertise</span>
           </h2>
           <motion.div
-            className="w-20 h-1 bg-primary mx-auto rounded-full"
+            className="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full"
             initial={{ scaleX: 0 }}
             animate={isInView ? { scaleX: 1 } : {}}
             transition={{ duration: 0.6, delay: 0.3 }}
@@ -100,7 +100,7 @@ const SkillsSection = () => {
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
           >
-            <h3 className="text-xl font-bold mb-6 flex items-center gap-2">
+            <h3 className="text-xl font-bold mb-6 flex items-center gap-2 font-display">
               <Code className="w-5 h-5 text-primary" />
               Technical Skills
             </h3>
@@ -131,7 +131,7 @@ const SkillsSection = () => {
                       <span className="font-medium">{skill.name}</span>
                     </div>
                     <motion.span
-                      className="font-mono text-primary text-sm"
+                      className="text-primary text-sm"
                       initial={{ opacity: 0 }}
                       animate={isInView ? { opacity: 1 } : {}}
                       transition={{ delay: 0.5 + index * 0.1 }}
@@ -147,13 +147,7 @@ const SkillsSection = () => {
                       transition={{ duration: 1, delay: 0.3 + index * 0.1, ease: "easeOut" }}
                     >
                       {/* Animated gradient bar */}
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary via-cyan-400 to-primary bg-[length:200%_100%] animate-shimmer" />
-                      {/* Glowing edge */}
-                      <motion.div
-                        className="absolute right-0 top-0 bottom-0 w-2 bg-primary blur-sm"
-                        animate={{ opacity: [0.5, 1, 0.5] }}
-                        transition={{ duration: 1.5, repeat: Infinity }}
-                      />
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary via-accent to-primary bg-[length:200%_100%] animate-shimmer" />
                     </motion.div>
                   </div>
                 </motion.div>
@@ -167,7 +161,7 @@ const SkillsSection = () => {
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
           >
-            <h3 className="text-xl font-bold mb-6 flex items-center gap-2">
+            <h3 className="text-xl font-bold mb-6 flex items-center gap-2 font-display">
               <Brain className="w-5 h-5 text-primary" />
               Soft Skills
             </h3>
@@ -224,7 +218,7 @@ const SkillsSection = () => {
                   </div>
                   <p className="font-medium text-sm">{skill.name}</p>
                   <motion.p
-                    className="font-mono text-primary text-xs"
+                    className="text-primary text-xs"
                     initial={{ opacity: 0 }}
                     animate={isInView ? { opacity: 1 } : {}}
                     transition={{ delay: 0.5 + index * 0.1 }}
@@ -237,16 +231,6 @@ const SkillsSection = () => {
           </motion.div>
         </div>
       </div>
-
-      {/* Closing tag */}
-      <motion.div
-        className="text-center mt-16"
-        initial={{ opacity: 0 }}
-        animate={isInView ? { opacity: 1 } : {}}
-        transition={{ delay: 0.8 }}
-      >
-        <span className="font-mono text-primary/50 text-sm">&lt;/skills&gt;</span>
-      </motion.div>
     </section>
   );
 };

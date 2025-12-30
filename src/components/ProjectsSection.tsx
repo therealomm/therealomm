@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { ExternalLink, Github, Shield, Brain, Lock, Gamepad2 } from "lucide-react";
+import { ExternalLink, Github, Brain, Lock, Gamepad2, Globe } from "lucide-react";
 import { Button } from "./ui/button";
 import AnimatedCard from "./AnimatedCard";
 
@@ -16,12 +16,12 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "PhishGuard",
+    title: "Smart Detection App",
     description:
-      "AI-powered phishing detection system for emails and SMS using Machine Learning and Large Language Models.",
+      "AI-powered detection system using Machine Learning and Large Language Models for intelligent classification.",
     tech: ["Python", "Flask", "React/Next.js", "MongoDB", "LLM"],
-    icon: Shield,
-    color: "from-cyan-500 to-blue-500",
+    icon: Globe,
+    color: "from-violet-500 to-purple-500",
     github: "https://github.com/therealomm",
   },
   {
@@ -30,16 +30,16 @@ const projects: Project[] = [
       "Deep learning-based natural language processing system for sentiment classification and analysis.",
     tech: ["Python", "NLP", "Deep Learning", "TensorFlow"],
     icon: Brain,
-    color: "from-purple-500 to-pink-500",
+    color: "from-pink-500 to-rose-500",
     github: "https://github.com/therealomm",
   },
   {
     title: "Image Based Steganography",
     description:
-      "Secure data hiding tool that embeds secret messages within images using steganographic techniques.",
+      "Secure data hiding tool that embeds secret messages within images using advanced techniques.",
     tech: ["Python", "TKinter", "Cryptography"],
     icon: Lock,
-    color: "from-green-500 to-emerald-500",
+    color: "from-blue-500 to-cyan-500",
     github: "https://github.com/therealomm",
   },
   {
@@ -48,7 +48,7 @@ const projects: Project[] = [
       "Interactive desktop game built with Python and TKinter featuring engaging gameplay mechanics.",
     tech: ["Python", "TKinter", "Game Dev"],
     icon: Gamepad2,
-    color: "from-orange-500 to-yellow-500",
+    color: "from-orange-500 to-amber-500",
     github: "https://github.com/therealomm",
   },
 ];
@@ -96,14 +96,14 @@ const ProjectsSection = () => {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
         >
-          <span className="font-mono text-primary text-sm tracking-wider uppercase">
-            &lt;projects&gt;
+          <span className="text-primary text-sm tracking-wider uppercase font-medium">
+            Projects
           </span>
-          <h2 className="text-3xl md:text-5xl font-bold mt-2 mb-4">
+          <h2 className="text-3xl md:text-5xl font-bold mt-2 mb-4 font-display">
             Featured <span className="text-gradient">Work</span>
           </h2>
           <motion.div
-            className="w-20 h-1 bg-primary mx-auto rounded-full"
+            className="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full"
             initial={{ scaleX: 0 }}
             animate={isInView ? { scaleX: 1 } : {}}
             transition={{ duration: 0.6, delay: 0.3 }}
@@ -150,7 +150,7 @@ const ProjectsSection = () => {
                   </motion.div>
 
                   {/* Content */}
-                  <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors relative z-10">
+                  <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors relative z-10 font-display">
                     {project.title}
                   </h3>
                   <p className="text-muted-foreground mb-4 leading-relaxed relative z-10">
@@ -162,7 +162,7 @@ const ProjectsSection = () => {
                     {project.tech.map((tech, techIndex) => (
                       <motion.span
                         key={tech}
-                        className="px-3 py-1 bg-secondary text-xs font-mono text-muted-foreground rounded-full border border-primary/10"
+                        className="px-3 py-1 bg-secondary text-xs text-muted-foreground rounded-full border border-border"
                         initial={{ opacity: 0, scale: 0.8 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         transition={{ delay: techIndex * 0.05 }}
@@ -193,7 +193,7 @@ const ProjectsSection = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <Button variant="cyber" size="sm" className="group/btn">
+                        <Button variant="default" size="sm" className="group/btn">
                           <ExternalLink className="w-4 h-4 group-hover/btn:rotate-12 transition-transform" />
                           Demo
                         </Button>
@@ -227,7 +227,7 @@ const ProjectsSection = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button variant="cyber" size="lg" className="group">
+            <Button variant="default" size="lg" className="group">
               <motion.span
                 className="flex items-center gap-2"
                 whileHover={{ scale: 1.05 }}
@@ -239,18 +239,6 @@ const ProjectsSection = () => {
           </a>
         </motion.div>
       </div>
-
-      {/* Closing tag */}
-      <motion.div
-        className="text-center mt-16"
-        initial={{ opacity: 0 }}
-        animate={isInView ? { opacity: 1 } : {}}
-        transition={{ delay: 0.8 }}
-      >
-        <span className="font-mono text-primary/50 text-sm">
-          &lt;/projects&gt;
-        </span>
-      </motion.div>
     </section>
   );
 };

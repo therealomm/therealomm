@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ["Inter", "system-ui", "sans-serif"],
-        mono: ["JetBrains Mono", "monospace"],
+        sans: ["Sora", "system-ui", "sans-serif"],
+        display: ["Space Grotesk", "system-ui", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -51,14 +51,6 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        cyber: {
-          glow: "hsl(var(--cyber-glow))",
-          dark: "hsl(var(--cyber-dark))",
-          grid: "hsl(var(--cyber-grid))",
-        },
-        terminal: {
-          green: "hsl(var(--terminal-green))",
-        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -80,8 +72,8 @@ export default {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       backgroundImage: {
-        "gradient-cyber": "var(--gradient-cyber)",
-        "gradient-glow": "var(--gradient-glow)",
+        "gradient-primary": "var(--gradient-primary)",
+        "gradient-subtle": "var(--gradient-subtle)",
         "gradient-card": "var(--gradient-card)",
       },
     },
