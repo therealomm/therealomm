@@ -103,7 +103,7 @@ const HeroSection = () => {
               <span className="text-gradient">Om Jagtap</span>
             </h1>
             <motion.div 
-              className="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden border-2 border-primary/50 shadow-lg shadow-primary/20"
+              className="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border-2 border-primary/50 shadow-lg shadow-primary/20"
               whileHover={{ scale: 1.1 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
