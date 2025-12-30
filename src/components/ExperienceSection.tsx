@@ -50,6 +50,7 @@ const experiences: Experience[] = [
     type: "work",
     description:
       "Foundation in technology concepts and modern solutions.",
+    verifyLink: "https://aictecert.eduskillsfoundation.org/pages/home/verify.php?cert=022d0f668b7a9c977cce768b6b4d2fb6",
   },
 ];
 
