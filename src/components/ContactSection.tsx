@@ -20,7 +20,7 @@ const ContactSection = () => {
     const subject = `Portfolio Contact from ${formData.name}`;
     const body = `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`;
     window.location.href = `mailto:omjagtap21@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    
+
     toast({
       title: "Opening email client...",
       description: "Your default email application will open with the message.",
@@ -51,7 +51,7 @@ const ContactSection = () => {
   const socialLinks = [
     { icon: Github, label: "GitHub", href: "https://github.com/therealomm" },
     { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/therealomm" },
-    { icon: ExternalLink, label: "Portfolio", href: "https://therealomm.github.io/portfolio/" },
+    { icon: ExternalLink, label: "Portfolio", href: "https://therealomm.onrender.com/" },
   ];
 
   const containerVariants = {
@@ -87,14 +87,12 @@ const ContactSection = () => {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
         >
-          <span className="text-primary text-sm tracking-wider uppercase font-medium">
-            Contact
-          </span>
-          <h2 className="text-3xl md:text-5xl font-bold mt-2 mb-4 font-display">
+          <span className="font-mono text-primary text-sm tracking-wider uppercase">&lt;contact&gt;</span>
+          <h2 className="text-3xl md:text-5xl font-bold mt-2 mb-4">
             Get In <span className="text-gradient">Touch</span>
           </h2>
           <motion.div
-            className="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full"
+            className="w-20 h-1 bg-primary mx-auto rounded-full"
             initial={{ scaleX: 0 }}
             animate={isInView ? { scaleX: 1 } : {}}
             transition={{ duration: 0.6, delay: 0.3 }}
@@ -105,8 +103,8 @@ const ContactSection = () => {
             animate={isInView ? { opacity: 1 } : {}}
             transition={{ delay: 0.4 }}
           >
-            Have a project in mind or want to collaborate? Feel free to
-            reach out. I'm always open to new opportunities.
+            Have a project in mind or want to discuss cybersecurity? Feel free to reach out. I'm always open to new
+            opportunities and collaborations.
           </motion.p>
         </motion.div>
 
@@ -123,22 +121,14 @@ const ContactSection = () => {
                 { name: "name", label: "Your Name", type: "text", placeholder: "John Doe" },
                 { name: "email", label: "Your Email", type: "email", placeholder: "john@example.com" },
               ].map((field) => (
-                <motion.div
-                  key={field.name}
-                  whileHover={{ scale: 1.01 }}
-                  whileFocus={{ scale: 1.01 }}
-                >
-                  <label className="block text-sm font-medium mb-2">
-                    {field.label}
-                  </label>
+                <motion.div key={field.name} whileHover={{ scale: 1.01 }} whileFocus={{ scale: 1.01 }}>
+                  <label className="block text-sm font-medium mb-2">{field.label}</label>
                   <motion.input
                     type={field.type}
                     required
                     value={formData[field.name as keyof typeof formData]}
-                    onChange={(e) =>
-                      setFormData({ ...formData, [field.name]: e.target.value })
-                    }
-                    className="w-full px-4 py-3 bg-secondary/50 border border-border rounded-xl focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all duration-300 text-foreground placeholder:text-muted-foreground"
+                    onChange={(e) => setFormData({ ...formData, [field.name]: e.target.value })}
+                    className="w-full px-4 py-3 bg-secondary/50 border border-primary/20 rounded-xl focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all duration-300 text-foreground placeholder:text-muted-foreground"
                     placeholder={field.placeholder}
                     whileFocus={{
                       boxShadow: "0 0 20px hsl(var(--primary) / 0.2)",
@@ -147,17 +137,13 @@ const ContactSection = () => {
                 </motion.div>
               ))}
               <motion.div whileHover={{ scale: 1.01 }}>
-                <label className="block text-sm font-medium mb-2">
-                  Message
-                </label>
+                <label className="block text-sm font-medium mb-2">Message</label>
                 <motion.textarea
                   required
                   rows={5}
                   value={formData.message}
-                  onChange={(e) =>
-                    setFormData({ ...formData, message: e.target.value })
-                  }
-                  className="w-full px-4 py-3 bg-secondary/50 border border-border rounded-xl focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all duration-300 text-foreground placeholder:text-muted-foreground resize-none"
+                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                  className="w-full px-4 py-3 bg-secondary/50 border border-primary/20 rounded-xl focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all duration-300 text-foreground placeholder:text-muted-foreground resize-none"
                   placeholder="Tell me about your project or opportunity..."
                   whileFocus={{
                     boxShadow: "0 0 20px hsl(var(--primary) / 0.2)",
@@ -176,7 +162,20 @@ const ContactSection = () => {
           {/* Contact Info */}
           <motion.div variants={itemVariants}>
             <div className="glass p-8 rounded-xl h-full relative overflow-hidden">
-              <h3 className="text-xl font-bold mb-6 relative z-10 font-display">Contact Information</h3>
+              {/* Animated border */}
+              <motion.div
+                className="absolute inset-0 rounded-xl"
+                style={{
+                  background: "linear-gradient(90deg, transparent, hsl(var(--primary) / 0.3), transparent)",
+                  backgroundSize: "200% 100%",
+                }}
+                animate={{
+                  backgroundPosition: ["200% 0", "-200% 0"],
+                }}
+                transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
+              />
+
+              <h3 className="text-xl font-bold mb-6 relative z-10">Contact Information</h3>
 
               <div className="space-y-6 mb-8 relative z-10">
                 {contactInfo.map((info, index) => (
@@ -196,21 +195,15 @@ const ContactSection = () => {
                       <info.icon className="w-5 h-5 text-primary" />
                     </motion.div>
                     <div>
-                      <p className="text-sm text-muted-foreground">
-                        {info.label}
-                      </p>
-                      <p className="font-medium group-hover:text-primary transition-colors">
-                        {info.value}
-                      </p>
+                      <p className="text-sm text-muted-foreground">{info.label}</p>
+                      <p className="font-medium group-hover:text-primary transition-colors">{info.value}</p>
                     </div>
                   </motion.a>
                 ))}
               </div>
 
-              <div className="border-t border-border pt-6 relative z-10">
-                <p className="text-sm text-muted-foreground mb-4">
-                  Follow me on
-                </p>
+              <div className="border-t border-primary/20 pt-6 relative z-10">
+                <p className="text-sm text-muted-foreground mb-4">Follow me on</p>
                 <div className="flex gap-4">
                   {socialLinks.map((link, index) => (
                     <motion.a
@@ -234,14 +227,23 @@ const ContactSection = () => {
 
               {/* Availability indicator */}
               <motion.div
-                className="mt-8 p-4 bg-background/50 rounded-lg text-sm relative z-10 border border-border"
+                className="mt-8 p-4 bg-background/50 rounded-lg font-mono text-sm relative z-10"
+                animate={{
+                  borderColor: ["hsl(var(--primary) / 0.3)", "hsl(var(--primary) / 0.6)", "hsl(var(--primary) / 0.3)"],
+                }}
+                transition={{ duration: 2, repeat: Infinity }}
+                style={{ border: "1px solid" }}
               >
                 <div className="flex items-center gap-2 text-muted-foreground">
                   <motion.span
                     className="w-2 h-2 bg-green-500 rounded-full"
                     animate={{
                       scale: [1, 1.2, 1],
-                      boxShadow: ["0 0 0 0 rgba(34, 197, 94, 0.5)", "0 0 0 8px rgba(34, 197, 94, 0)", "0 0 0 0 rgba(34, 197, 94, 0.5)"],
+                      boxShadow: [
+                        "0 0 0 0 rgba(34, 197, 94, 0.5)",
+                        "0 0 0 8px rgba(34, 197, 94, 0)",
+                        "0 0 0 0 rgba(34, 197, 94, 0.5)",
+                      ],
                     }}
                     transition={{ duration: 2, repeat: Infinity }}
                   />
@@ -252,6 +254,16 @@ const ContactSection = () => {
           </motion.div>
         </motion.div>
       </div>
+
+      {/* Closing tag */}
+      <motion.div
+        className="text-center mt-16"
+        initial={{ opacity: 0 }}
+        animate={isInView ? { opacity: 1 } : {}}
+        transition={{ delay: 0.8 }}
+      >
+        <span className="font-mono text-primary/50 text-sm">&lt;/contact&gt;</span>
+      </motion.div>
     </section>
   );
 };

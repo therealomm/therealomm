@@ -8,31 +8,36 @@ import ProjectsSection from "@/components/ProjectsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import ParticleField from "@/components/ParticleField";
+import MatrixRain from "@/components/MatrixRain";
+
+import FloatingIcons from "@/components/FloatingIcons";
 
 const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Om Jagtap | Software Developer & Tech Enthusiast</title>
+        <title>Om Jagtap | Cybersecurity Professional</title>
         <meta
           name="description"
-          content="Om Jagtap - Software Developer and Tech Enthusiast. B.Tech CSE student passionate about building innovative solutions."
+          content="Om Jagtap - Cybersecurity enthusiast specializing in network security, Zero Trust Architecture, and ethical hacking. B.Tech CSE student at MIT ADT University, Pune."
         />
         <meta
           name="keywords"
-          content="Om Jagtap, Software Developer, Web Development, Portfolio, Developer, Tech"
+          content="Om Jagtap, Cybersecurity, Network Security, Zero Trust, Ethical Hacking, Portfolio, Developer"
         />
-        <meta property="og:title" content="Om Jagtap | Software Developer" />
+        <meta property="og:title" content="Om Jagtap | Cybersecurity Professional" />
         <meta
           property="og:description"
-          content="Software Developer and Tech Enthusiast passionate about building innovative solutions."
+          content="Cybersecurity enthusiast specializing in network security, Zero Trust Architecture, and ethical hacking."
         />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://therealomm.github.io/portfolio/" />
+        <link rel="canonical" href="https://therealomm.onrender.com/" />
       </Helmet>
 
-      {/* Subtle background effects */}
+      {/* Visual Effects */}
+      <MatrixRain />
       <ParticleField />
+      <FloatingIcons />
 
       <main className="min-h-screen relative">
         <Navbar />
