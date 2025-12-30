@@ -10,6 +10,7 @@ interface Experience {
   description: string;
   details?: string[];
   verifyLink?: string;
+  employmentType?: "full-time" | "part-time";
 }
 
 const experiences: Experience[] = [
@@ -18,13 +19,9 @@ const experiences: Experience[] = [
     company: "Road2Tech",
     period: "Dec 2024 – Ongoing",
     type: "work",
+    employmentType: "part-time",
     description:
-      "Working as a Project Intern, contributing to the design, development, and implementation of project modules under senior guidance.",
-    details: [
-      "Supported research, documentation, data analysis, and development tasks",
-      "Gaining hands-on experience with real-world tools and workflows",
-      "Part-time position",
-    ],
+      "Working as a Project Intern, contributing to the design, development, and implementation of project modules under senior guidance. Supported research, documentation, data analysis, and development tasks while gaining hands-on experience with real-world tools and workflows.",
   },
   {
     title: "Cybersecurity Intern",
@@ -142,9 +139,16 @@ const ExperienceSection = () => {
                   <div className="glass p-6 rounded-xl hover:border-primary/50 transition-all duration-300 group">
                     <div className="flex flex-wrap items-start justify-between gap-2 mb-3">
                       <div>
-                        <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors font-display">
-                          {exp.title}
-                        </h3>
+                        <div className="flex items-center gap-2">
+                          <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors font-display">
+                            {exp.title}
+                          </h3>
+                          {exp.employmentType && (
+                            <span className="text-[10px] px-2 py-0.5 bg-accent/20 text-accent rounded-full font-medium uppercase tracking-wide">
+                              {exp.employmentType}
+                            </span>
+                          )}
+                        </div>
                         <p className="text-primary font-medium">{exp.company}</p>
                       </div>
                       <span className="flex items-center gap-1 text-muted-foreground text-sm bg-secondary px-3 py-1 rounded-full">
