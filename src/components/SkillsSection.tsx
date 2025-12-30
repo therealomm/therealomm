@@ -262,77 +262,89 @@ const SkillsSection = () => {
         </div>
 
         {/* Tools Section */}
-        <div className="grid lg:grid-cols-2 gap-12 mt-16">
-          {/* Cybersecurity Tools */}
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            animate={isInView ? "visible" : "hidden"}
-          >
-            <h3 className="text-xl font-bold mb-6 flex items-center gap-2 font-display">
-              <Wrench className="w-5 h-5 text-primary" />
-              Cybersecurity Tools
-            </h3>
-            <div className="grid grid-cols-3 gap-3">
-              {cyberTools.map((tool, index) => (
-                <motion.div
-                  key={tool.name}
-                  className="glass p-4 rounded-xl group hover:border-primary/50 transition-all duration-300 text-center relative overflow-hidden"
-                  variants={itemVariants}
-                  whileHover={{ scale: 1.05, y: -5 }}
-                >
-                  <motion.div
-                    className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100"
-                    transition={{ duration: 0.3 }}
-                  />
-                  <motion.div
-                    className="w-10 h-10 mx-auto mb-2 flex items-center justify-center"
-                    whileHover={{ rotate: 360, scale: 1.2 }}
-                    transition={{ duration: 0.5 }}
-                  >
-                    <tool.icon className="w-6 h-6 text-primary" />
-                  </motion.div>
-                  <p className="font-medium text-xs relative z-10">{tool.name}</p>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
+        <motion.div
+          className="mt-16"
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.4 }}
+        >
+          <h3 className="text-2xl font-bold mb-8 flex items-center gap-2 font-display text-center justify-center">
+            <Wrench className="w-6 h-6 text-primary" />
+            Tools
+          </h3>
 
-          {/* Other Tools */}
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            animate={isInView ? "visible" : "hidden"}
-          >
-            <h3 className="text-xl font-bold mb-6 flex items-center gap-2 font-display">
-              <Palette className="w-5 h-5 text-primary" />
-              Other Tools
-            </h3>
-            <div className="grid grid-cols-3 gap-3">
-              {otherTools.map((tool, index) => (
-                <motion.div
-                  key={tool.name}
-                  className="glass p-4 rounded-xl group hover:border-primary/50 transition-all duration-300 text-center relative overflow-hidden"
-                  variants={itemVariants}
-                  whileHover={{ scale: 1.05, y: -5 }}
-                >
+          <div className="grid lg:grid-cols-2 gap-12">
+            {/* Cybersecurity Tools */}
+            <motion.div
+              variants={containerVariants}
+              initial="hidden"
+              animate={isInView ? "visible" : "hidden"}
+            >
+              <h4 className="text-lg font-semibold mb-4 flex items-center gap-2 text-primary/90">
+                <Shield className="w-4 h-4" />
+                Cybersecurity Tools
+              </h4>
+              <div className="grid grid-cols-3 gap-3">
+                {cyberTools.map((tool, index) => (
                   <motion.div
-                    className="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent opacity-0 group-hover:opacity-100"
-                    transition={{ duration: 0.3 }}
-                  />
-                  <motion.div
-                    className="w-10 h-10 mx-auto mb-2 flex items-center justify-center"
-                    whileHover={{ rotate: 360, scale: 1.2 }}
-                    transition={{ duration: 0.5 }}
+                    key={tool.name}
+                    className="glass p-4 rounded-xl group hover:border-primary/50 transition-all duration-300 text-center relative overflow-hidden"
+                    variants={itemVariants}
+                    whileHover={{ scale: 1.05, y: -5 }}
                   >
-                    <tool.icon className="w-6 h-6 text-primary" />
+                    <motion.div
+                      className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100"
+                      transition={{ duration: 0.3 }}
+                    />
+                    <motion.div
+                      className="w-10 h-10 mx-auto mb-2 flex items-center justify-center"
+                      whileHover={{ rotate: 360, scale: 1.2 }}
+                      transition={{ duration: 0.5 }}
+                    >
+                      <tool.icon className="w-6 h-6 text-primary" />
+                    </motion.div>
+                    <p className="font-medium text-xs relative z-10">{tool.name}</p>
                   </motion.div>
-                  <p className="font-medium text-xs relative z-10">{tool.name}</p>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
+                ))}
+              </div>
+            </motion.div>
+
+            {/* Other Tools */}
+            <motion.div
+              variants={containerVariants}
+              initial="hidden"
+              animate={isInView ? "visible" : "hidden"}
+            >
+              <h4 className="text-lg font-semibold mb-4 flex items-center gap-2 text-primary/90">
+                <Palette className="w-4 h-4" />
+                Other Tools
+              </h4>
+              <div className="grid grid-cols-3 gap-3">
+                {otherTools.map((tool, index) => (
+                  <motion.div
+                    key={tool.name}
+                    className="glass p-4 rounded-xl group hover:border-primary/50 transition-all duration-300 text-center relative overflow-hidden"
+                    variants={itemVariants}
+                    whileHover={{ scale: 1.05, y: -5 }}
+                  >
+                    <motion.div
+                      className="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent opacity-0 group-hover:opacity-100"
+                      transition={{ duration: 0.3 }}
+                    />
+                    <motion.div
+                      className="w-10 h-10 mx-auto mb-2 flex items-center justify-center"
+                      whileHover={{ rotate: 360, scale: 1.2 }}
+                      transition={{ duration: 0.5 }}
+                    >
+                      <tool.icon className="w-6 h-6 text-primary" />
+                    </motion.div>
+                    <p className="font-medium text-xs relative z-10">{tool.name}</p>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
