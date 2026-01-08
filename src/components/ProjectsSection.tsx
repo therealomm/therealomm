@@ -42,19 +42,19 @@ const projects: Project[] = [
     github: "https://github.com/therealomm/TYAIA515",
   },
   {
+    title: "Keylogger Detector",
+    description: "Security tool that detects and alerts users of potential keylogger processes running on their system.",
+    tech: ["Python", "Tkinter", "psutil"],
+    icon: Shield,
+    color: "from-red-500 to-rose-500",
+    github: "https://github.com/therealomm/Keylogger-Detector",
+  },
+  {
     title: "Image Based Steganography",
     description: "Secure data hiding tool that embeds secret messages within images using steganographic techniques.",
     tech: ["Python", "TKinter", "Cryptography"],
     icon: Lock,
     color: "from-green-500 to-emerald-500",
-    github: "https://github.com/therealomm",
-  },
-  {
-    title: "Egg Catcher Game",
-    description: "Interactive desktop game built with Python and TKinter featuring engaging gameplay mechanics.",
-    tech: ["Python", "TKinter", "Game Dev"],
-    icon: Gamepad2,
-    color: "from-orange-500 to-yellow-500",
     github: "https://github.com/therealomm",
   },
 ];
