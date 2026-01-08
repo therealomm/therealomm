@@ -43,7 +43,8 @@ const projects: Project[] = [
   },
   {
     title: "Keylogger Detector",
-    description: "Security tool that detects and alerts users of potential keylogger processes running on their system.",
+    description:
+      "Security tool that detects and alerts users of potential keylogger processes running on their system.",
     tech: ["Python", "Tkinter", "psutil"],
     icon: Shield,
     color: "from-red-500 to-rose-500",
@@ -52,10 +53,10 @@ const projects: Project[] = [
   {
     title: "Image Based Steganography",
     description: "Secure data hiding tool that embeds secret messages within images using steganographic techniques.",
-    tech: ["Python", "TKinter", "Cryptography"],
+    tech: ["Python", "TKinter", "Pillow"],
     icon: Lock,
     color: "from-green-500 to-emerald-500",
-    github: "https://github.com/therealomm",
+    github: "https://github.com/therealomm/-Image-Based-Steganography",
   },
 ];
 
