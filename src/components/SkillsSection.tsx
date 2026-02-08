@@ -44,7 +44,7 @@ const skills: Skill[] = [
   { name: "Cyber Security", icon: Shield, level: 85, category: "technical" },
   { name: "Network Security", icon: Network, level: 80, category: "technical" },
   { name: "Vulnerability Analysis", icon: Search, level: 75, category: "technical" },
-  { name: "Java & Python", icon: Code, level: 80, category: "technical" },
+  { name: "Python", icon: Code, level: 80, category: "technical" },
   { name: "Machine Learning", icon: Brain, level: 70, category: "technical" },
   { name: "AI Tools & Automation", icon: Zap, level: 85, category: "technical" },
   { name: "Technical Documentation", icon: FileText, level: 80, category: "soft" },
@@ -117,9 +117,7 @@ const SkillsSection = () => {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
         >
-          <span className="text-primary text-sm tracking-wider uppercase font-medium">
-            Skills
-          </span>
+          <span className="text-primary text-sm tracking-wider uppercase font-medium">Skills</span>
           <h2 className="text-3xl md:text-5xl font-bold mt-2 mb-4 font-display">
             My <span className="text-gradient">Expertise</span>
           </h2>
@@ -133,11 +131,7 @@ const SkillsSection = () => {
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Technical Skills */}
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            animate={isInView ? "visible" : "hidden"}
-          >
+          <motion.div variants={containerVariants} initial="hidden" animate={isInView ? "visible" : "hidden"}>
             <h3 className="text-xl font-bold mb-6 flex items-center gap-2 font-display">
               <Shield className="w-5 h-5 text-primary" />
               Technical Skills
@@ -158,10 +152,7 @@ const SkillsSection = () => {
                   />
                   <div className="flex items-center justify-between mb-2 relative z-10">
                     <div className="flex items-center gap-3">
-                      <motion.div
-                        whileHover={{ rotate: 360, scale: 1.2 }}
-                        transition={{ duration: 0.5 }}
-                      >
+                      <motion.div whileHover={{ rotate: 360, scale: 1.2 }} transition={{ duration: 0.5 }}>
                         <skill.icon className="w-5 h-5 text-primary" />
                       </motion.div>
                       <span className="font-medium">{skill.name}</span>
@@ -191,11 +182,7 @@ const SkillsSection = () => {
           </motion.div>
 
           {/* Soft Skills */}
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            animate={isInView ? "visible" : "hidden"}
-          >
+          <motion.div variants={containerVariants} initial="hidden" animate={isInView ? "visible" : "hidden"}>
             <h3 className="text-xl font-bold mb-6 flex items-center gap-2 font-display">
               <Brain className="w-5 h-5 text-primary" />
               Soft Skills
@@ -210,13 +197,7 @@ const SkillsSection = () => {
                 >
                   <div className="relative w-20 h-20 mx-auto mb-3">
                     <svg className="w-full h-full -rotate-90">
-                      <circle
-                        cx="40"
-                        cy="40"
-                        r="36"
-                        className="fill-none stroke-secondary"
-                        strokeWidth="4"
-                      />
+                      <circle cx="40" cy="40" r="36" className="fill-none stroke-secondary" strokeWidth="4" />
                       <motion.circle
                         cx="40"
                         cy="40"
@@ -275,11 +256,7 @@ const SkillsSection = () => {
 
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Cybersecurity Tools */}
-            <motion.div
-              variants={containerVariants}
-              initial="hidden"
-              animate={isInView ? "visible" : "hidden"}
-            >
+            <motion.div variants={containerVariants} initial="hidden" animate={isInView ? "visible" : "hidden"}>
               <h4 className="text-lg font-semibold mb-4 flex items-center gap-2 text-primary/90">
                 <Shield className="w-4 h-4" />
                 Cybersecurity Tools
@@ -310,11 +287,7 @@ const SkillsSection = () => {
             </motion.div>
 
             {/* Other Tools */}
-            <motion.div
-              variants={containerVariants}
-              initial="hidden"
-              animate={isInView ? "visible" : "hidden"}
-            >
+            <motion.div variants={containerVariants} initial="hidden" animate={isInView ? "visible" : "hidden"}>
               <h4 className="text-lg font-semibold mb-4 flex items-center gap-2 text-primary/90">
                 <Palette className="w-4 h-4" />
                 Other Tools
