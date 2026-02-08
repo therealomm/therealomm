@@ -82,6 +82,10 @@ const certifications: { name: string; issuer: string; verifyLink?: string; statu
     issuer: "Google",
     verifyLink: "https://drive.google.com/file/d/1TAnAHvCD_DPraBSHtXmnrWlqCTle5VHC/view?usp=drivesdk",
   },
+  {
+    name: "Certified Network Security Practitioner (CNSP)",
+    issuer: "TheSecOps Group",
+  },
 ];
 
 const ExperienceSection = () => {
