@@ -67,6 +67,11 @@ const certifications: { name: string; issuer: string; verifyLink?: string; statu
     verifyLink: "https://verify.skilljar.com/c/nxpb6s6itnrz",
   },
   {
+    name: "Certified Network Security Practitioner (CNSP)",
+    issuer: "TheSecOps Group",
+    verifyLink: "https://pentestingexams.com/certificate-validation/",
+  },
+  {
     name: "Ethical Hacking Essentials",
     issuer: "EC-Council CodeRed",
     verifyLink: "https://learn.eccouncil.org/certificate/4f955121-53c4-4bc0-876a-9549a3031642",
@@ -81,10 +86,6 @@ const certifications: { name: string; issuer: string; verifyLink?: string; statu
     name: "Fundamentals of Digital Marketing",
     issuer: "Google",
     verifyLink: "https://drive.google.com/file/d/1TAnAHvCD_DPraBSHtXmnrWlqCTle5VHC/view?usp=drivesdk",
-  },
-  {
-    name: "Certified Network Security Practitioner (CNSP)",
-    issuer: "TheSecOps Group",
   },
 ];
 
