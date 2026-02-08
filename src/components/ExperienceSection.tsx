@@ -19,9 +19,9 @@ const experiences: Experience[] = [
     title: "Project Intern",
     company: "Road2Tech",
     companyLink: "https://www.road2tech.in",
-    period: "Dec 2024 – Ongoing",
+    period: "Dec 2024 – Dec 2025",
     type: "work",
-    employmentType: "part-time",
+
     description:
       "Contributing to project development and implementation under senior guidance, supporting research, Reporting, documentation, and data analysis tasks.",
   },
@@ -31,21 +31,15 @@ const experiences: Experience[] = [
     companyLink: "https://prodigyinfotech.dev/",
     period: "Apr 2024 – May 2024",
     type: "work",
-    description:
-      "Gained practical exposure to cybersecurity principles, tools, and practices.",
-    details: [
-      "Hands-on experience with security tools",
-      "Real-world cybersecurity projects",
-      "CIN: PIT/APR24/5933",
-    ],
+    description: "Gained practical exposure to cybersecurity principles, tools, and practices.",
+    details: ["Hands-on experience with security tools", "Real-world cybersecurity projects", "CIN: PIT/APR24/5933"],
   },
   {
     title: "Zero Trust Cloud Security Virtual Internship",
     company: "Zscaler (AICTE)",
     period: "Jan 2024 – Mar 2024",
     type: "work",
-    description:
-      "Virtual internship focused on Zero Trust Architecture and cloud security practices.",
+    description: "Virtual internship focused on Zero Trust Architecture and cloud security practices.",
     verifyLink: "https://aictecert.eduskillsfoundation.org/pages/home/verify.php?cert=e474774b4df6795f24493dcda06c33a3",
   },
   {
@@ -53,8 +47,7 @@ const experiences: Experience[] = [
     company: "Fortinet (AICTE)",
     period: "Sep 2023 – Nov 2023",
     type: "work",
-    description:
-      "Comprehensive training on network security fundamentals and infrastructure.",
+    description: "Comprehensive training on network security fundamentals and infrastructure.",
     verifyLink: "https://aictecert.eduskillsfoundation.org/pages/home/verify.php?cert=deec718fb18fd3f6b13e6a149f69bb26",
   },
   {
@@ -62,18 +55,33 @@ const experiences: Experience[] = [
     company: "Palo Alto Networks (AICTE)",
     period: "May 2023 – Jun 2023",
     type: "work",
-    description:
-      "Foundation in cybersecurity concepts and modern security solutions.",
+    description: "Foundation in cybersecurity concepts and modern security solutions.",
     verifyLink: "https://aictecert.eduskillsfoundation.org/pages/home/verify.php?cert=022d0f668b7a9c977cce768b6b4d2fb6",
   },
 ];
 
 const certifications: { name: string; issuer: string; verifyLink?: string; status?: string }[] = [
-  { name: "Zscaler Zero Trust Cyber Associate (ZTCA)", issuer: "Zscaler", verifyLink: "https://verify.skilljar.com/c/nxpb6s6itnrz" },
-  { name: "Ethical Hacking Essentials", issuer: "EC-Council CodeRed", verifyLink: "https://learn.eccouncil.org/certificate/4f955121-53c4-4bc0-876a-9549a3031642" },
-  { name: "The Foundations of Cyber Security", issuer: "Coursera", verifyLink: "https://www.coursera.org/account/accomplishments/verify/34D26BYJD9L2" },
+  {
+    name: "Zscaler Zero Trust Cyber Associate (ZTCA)",
+    issuer: "Zscaler",
+    verifyLink: "https://verify.skilljar.com/c/nxpb6s6itnrz",
+  },
+  {
+    name: "Ethical Hacking Essentials",
+    issuer: "EC-Council CodeRed",
+    verifyLink: "https://learn.eccouncil.org/certificate/4f955121-53c4-4bc0-876a-9549a3031642",
+  },
+  {
+    name: "The Foundations of Cyber Security",
+    issuer: "Coursera",
+    verifyLink: "https://www.coursera.org/account/accomplishments/verify/34D26BYJD9L2",
+  },
   { name: "Microsoft Gen AI Foundations Certificate Program", issuer: "Upgrad", status: "Ongoing" },
-  { name: "Fundamentals of Digital Marketing", issuer: "Google", verifyLink: "https://drive.google.com/file/d/1TAnAHvCD_DPraBSHtXmnrWlqCTle5VHC/view?usp=drivesdk" },
+  {
+    name: "Fundamentals of Digital Marketing",
+    issuer: "Google",
+    verifyLink: "https://drive.google.com/file/d/1TAnAHvCD_DPraBSHtXmnrWlqCTle5VHC/view?usp=drivesdk",
+  },
 ];
 
 const ExperienceSection = () => {
@@ -87,7 +95,7 @@ const ExperienceSection = () => {
           setIsVisible(true);
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
 
     if (sectionRef.current) {
@@ -98,11 +106,7 @@ const ExperienceSection = () => {
   }, []);
 
   return (
-    <section
-      id="experience"
-      ref={sectionRef}
-      className="py-24 relative bg-secondary/20"
-    >
+    <section id="experience" ref={sectionRef} className="py-24 relative bg-secondary/20">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div
@@ -110,9 +114,7 @@ const ExperienceSection = () => {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <span className="text-primary text-sm tracking-wider uppercase font-medium">
-            Experience
-          </span>
+          <span className="text-primary text-sm tracking-wider uppercase font-medium">Experience</span>
           <h2 className="text-3xl md:text-5xl font-bold mt-2 mb-4 font-display">
             My <span className="text-gradient">Journey</span>
           </h2>
@@ -130,9 +132,7 @@ const ExperienceSection = () => {
                 <div
                   key={index}
                   className={`relative pl-12 md:pl-20 pb-10 transition-all duration-700 ${
-                    isVisible
-                      ? "opacity-100 translate-x-0"
-                      : "opacity-0 -translate-x-10"
+                    isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"
                   }`}
                   style={{ transitionDelay: `${index * 150}ms` }}
                 >
@@ -153,9 +153,9 @@ const ExperienceSection = () => {
                           )}
                         </div>
                         {exp.companyLink ? (
-                          <a 
-                            href={exp.companyLink} 
-                            target="_blank" 
+                          <a
+                            href={exp.companyLink}
+                            target="_blank"
                             rel="noopener noreferrer"
                             className="text-primary font-medium hover:underline flex items-center gap-1"
                           >
@@ -175,10 +175,7 @@ const ExperienceSection = () => {
                     {exp.details && (
                       <ul className="mt-3 space-y-1">
                         {exp.details.map((detail, i) => (
-                          <li
-                            key={i}
-                            className="text-muted-foreground text-sm flex items-center gap-2"
-                          >
+                          <li key={i} className="text-muted-foreground text-sm flex items-center gap-2">
                             <span className="w-1 h-1 bg-primary rounded-full" />
                             {detail}
                           </li>
@@ -190,7 +187,7 @@ const ExperienceSection = () => {
                         size="sm"
                         variant="outline"
                         className="mt-3 h-8 px-3 text-xs gap-1.5"
-                        onClick={() => window.open(exp.verifyLink, '_blank')}
+                        onClick={() => window.open(exp.verifyLink, "_blank")}
                       >
                         <ExternalLink className="w-3 h-3" />
                         Verify Certificate
@@ -205,9 +202,7 @@ const ExperienceSection = () => {
           {/* Certifications */}
           <div
             className={`transition-all duration-700 delay-300 ${
-              isVisible
-                ? "opacity-100 translate-x-0"
-                : "opacity-0 translate-x-10"
+              isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"
             }`}
           >
             <div className="glass p-6 rounded-xl sticky top-24">
@@ -233,16 +228,14 @@ const ExperienceSection = () => {
                             </span>
                           )}
                         </div>
-                        <p className="text-muted-foreground text-xs mt-1">
-                          {cert.issuer}
-                        </p>
+                        <p className="text-muted-foreground text-xs mt-1">{cert.issuer}</p>
                       </div>
                       {cert.verifyLink && (
                         <Button
                           size="sm"
                           variant="outline"
                           className="h-7 px-2 text-xs gap-1 shrink-0"
-                          onClick={() => window.open(cert.verifyLink, '_blank')}
+                          onClick={() => window.open(cert.verifyLink, "_blank")}
                         >
                           <ExternalLink className="w-3 h-3" />
                           Verify
